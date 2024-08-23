@@ -49,7 +49,7 @@ const VideoMain = () => {
             <h1 className="text-center text-2xl font-semibold sm:text-4xl mt-4">
               We all know we live once, right?
             </h1>
-            <p>
+            <p className="text-center">
               So, isn’t it time to take the next big step and start earning what
               you are worth?
             </p>

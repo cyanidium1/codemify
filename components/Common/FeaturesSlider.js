@@ -1,6 +1,6 @@
-import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Autoplay } from "swiper/modules";
+import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Autoplay } from 'swiper/modules';
 
 const FeaturesSlider = () => {
   return (
@@ -32,7 +32,7 @@ const FeaturesSlider = () => {
               992: {
                 slidesPerView: 3,
               },
-              : {
+              1280: {
                 slidesPerView: 4,
               },
             }}

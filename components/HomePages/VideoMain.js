@@ -46,10 +46,13 @@ const VideoMain = () => {
 
         <div className="container">
           <div className="row h-100 flex items-center justify-center">
-            <h1 className="text-center text-4xl">
-              We all know we live once, right? So, isn’t it time to take the
-              next big step and start earning what you are worth?
+            <h1 className="text-center text-2xl font-semibold sm:text-4xl mt-4">
+              We all know we live once, right?
             </h1>
+            <p>
+              So, isn’t it time to take the next big step and start earning what
+              you are worth?
+            </p>
 
             <iframe
               width={videoSize.width}

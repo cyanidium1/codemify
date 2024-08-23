@@ -7,9 +7,9 @@ const MainBanner = () => {
 
   return (
     <>
-      <div id="home" className="main-banner bg-gray">
-        <div className="bg-top"></div>
-        <div className="bg-bottom"></div>
+      <div id="home" className="main-banner bg-gray pt-4">
+        <div className="bg-top hidden sm:block"></div>
+        <div className="bg-bottom hidden sm:block"></div>
 
         <div className="container">
           <div className="row h-100 align-items-center">

@@ -22,10 +22,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>
-          Axolot - React Nextjs IT Solutions & Technology Services Company
-          Template
-        </title>
+        <title>Codemify - Learn to Code, Get Hired, and Thrive in Tech</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
 

@@ -9,13 +9,13 @@ import {
   useDisclosure,
 } from '@nextui-org/react';
 
-export default function ModalContact() {
+export default function ModalContact({ text = 'Contact' }) {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
   return (
     <div className="flex flex-col gap-2">
       <Button
-        onPress={onOpen}
+        onClick={onOpen}
         className="max-w-fit hidden dark:block"
         color="warning"
       >
@@ -26,18 +26,18 @@ export default function ModalContact() {
         className="max-w-fit dark:hidden"
         color="primary"
       >
-        Contact
+        {text}
       </Button>
       <Modal
         isOpen={isOpen}
-        placement="top-center"
+        placement="top-bottom"
         onOpenChange={onOpenChange}
         backdrop="blur"
       >
         <ModalContent>
           {(onClose) => (
             <>
-              <ModalHeader className="flex flex-col gap-1">
+              <ModalHeader className="flex flex-col gap-1 dark:text-white">
                 Modal Title
               </ModalHeader>
               <ModalBody>

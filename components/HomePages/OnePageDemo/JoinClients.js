@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import ModalContact from '@/components/Modal';
 
 const JoinClients = () => {
   return (
@@ -30,12 +31,13 @@ const JoinClients = () => {
                   skills and knowledge needed to succeed in the industry.
                 </p>
 
-                <Link
+                {/* <Link
                   href="#"
                   className="buttonBlick bg-customBlue dark:bg-yellow-500 text-white dark:text-black text-2xl text-center"
                 >
                   Join Now
-                </Link>
+                </Link> */}
+                <ModalContact text="Join us now!" />
                 {/* <Link href="#" className="buttonBlick">
                   Start Free Trial
                 </Link> */}

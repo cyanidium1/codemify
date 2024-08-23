@@ -1,6 +1,6 @@
-import React from "react";
-import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import Image from "next/image";
+import React from 'react';
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import Image from 'next/image';
 
 const ServicesTab = () => {
   return (
@@ -15,32 +15,17 @@ const ServicesTab = () => {
                     <Tab>
                       <i className="icofont-laptop"></i>
                       <br />
-                      User Experience
+                      What You Get
                     </Tab>
                     <Tab>
                       <i className="icofont-ruler-pencil-alt-2"></i>
                       <br />
-                      Product Design
+                      Webinars
                     </Tab>
                     <Tab>
                       <i className="icofont-marker-alt-1"></i>
                       <br />
-                      Digital Marketing
-                    </Tab>
-                    <Tab>
-                      <i className="icofont-light-bulb"></i>
-                      <br />
-                      Branding
-                    </Tab>
-                    <Tab>
-                      <i className="icofont-laptop-alt"></i>
-                      <br />
-                      Development
-                    </Tab>
-                    <Tab>
-                      <i className="icofont-infant-nipple"></i>
-                      <br />
-                      Marketing
+                      Community
                     </Tab>
                   </TabList>
 
@@ -48,30 +33,19 @@ const ServicesTab = () => {
                     <div className="row align-items-center">
                       <div className="col-lg-6 col-md-6">
                         <div className="tabs_item_content mt-0">
-                          <h3>User Experience</h3>
+                          <h3>What You Get This Week</h3>
                           <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Ut enim ad minim veniam, quis
-                            nostrud exercitation ullamco laboris nisi ut aliquip
-                            ex ea commodo.
+                            6 full video lessons in a private channel with
+                            learning materials, after watching which our
+                            students have already found jobs. Shocked? We were
+                            too! Because we sincerely share the highest quality
+                            and practical knowledge with you.
                           </p>
-                          <ul>
-                            <li>
-                              <i className="icofont-ui-check"></i> Creative
-                              Design
-                            </li>
-                            <li>
-                              <i className="icofont-ui-check"></i> Retina Ready
-                            </li>
-                            <li>
-                              <i className="icofont-ui-check"></i> Modern Design
-                            </li>
-                            <li>
-                              <i className="icofont-ui-check"></i> Digital
-                              Marketing & Branding
-                            </li>
-                          </ul>
+                          <p>
+                            <strong>Original cost:</strong> ?
+                            <br />
+                            <strong>Special offer:</strong> $10
+                          </p>
                         </div>
                       </div>
                       <div className="col-lg-6 col-md-6">
@@ -101,30 +75,19 @@ const ServicesTab = () => {
                       </div>
                       <div className="col-lg-6 col-md-6">
                         <div className="tabs_item_content mb-0">
-                          <h3>Product Design</h3>
+                          <h3>Webinars</h3>
                           <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Ut enim ad minim veniam, quis
-                            nostrud exercitation ullamco laboris nisi ut aliquip
-                            ex ea commodo.
+                            3 webinars with the founder of the school and the
+                            main mentor of our students. Believe us, his
+                            experience and life path will become a growth
+                            trigger and change not only your life but also your
+                            mindset.
                           </p>
-                          <ul>
-                            <li>
-                              <i className="icofont-ui-check"></i> Creative
-                              Design
-                            </li>
-                            <li>
-                              <i className="icofont-ui-check"></i> Retina Ready
-                            </li>
-                            <li>
-                              <i className="icofont-ui-check"></i> Modern Design
-                            </li>
-                            <li>
-                              <i className="icofont-ui-check"></i> Digital
-                              Marketing & Branding
-                            </li>
-                          </ul>
+                          <p>
+                            <strong>Original cost:</strong> ?
+                            <br />
+                            <strong>Special offer:</strong> $10
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -134,30 +97,27 @@ const ServicesTab = () => {
                     <div className="row align-items-center">
                       <div className="col-lg-6 col-md-6">
                         <div className="tabs_item_content mt-0">
-                          <h3>Digital Marketing</h3>
+                          <h3>Community</h3>
                           <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Ut enim ad minim veniam, quis
-                            nostrud exercitation ullamco laboris nisi ut aliquip
-                            ex ea commodo.
+                            You will become part of a community of like-minded
+                            individuals because each of us knows that our
+                            environment shapes us and directly influences our
+                            income level.
                           </p>
-                          <ul>
-                            <li>
-                              <i className="icofont-ui-check"></i> Creative
-                              Design
-                            </li>
-                            <li>
-                              <i className="icofont-ui-check"></i> Retina Ready
-                            </li>
-                            <li>
-                              <i className="icofont-ui-check"></i> Modern Design
-                            </li>
-                            <li>
-                              <i className="icofont-ui-check"></i> Digital
-                              Marketing & Branding
-                            </li>
-                          </ul>
+                          <p>
+                            <strong>Special gift/offer:</strong> During this
+                            week, you will have the opportunity to win free
+                            six-month training from Codemify, consider it as us
+                            giving you a $5250 check and a chance to become
+                            financially independent.
+                          </p>
+                          <p>
+                            We also don't forget about others and will give away
+                            2 more special offers to those who score the most
+                            points by passing our tests. Nothing complicated,
+                            but you won't find an offer like this in any other
+                            school.
+                          </p>
                         </div>
                       </div>
                       <div className="col-lg-6 col-md-6">
@@ -168,135 +128,6 @@ const ServicesTab = () => {
                             width={500}
                             height={400}
                           />
-                        </div>
-                      </div>
-                    </div>
-                  </TabPanel>
-
-                  <TabPanel>
-                    <div className="row">
-                      <div className="col-lg-6 col-md-6">
-                        <div className="tabs_item_img">
-                          <Image
-                            src="/img/1.png"
-                            alt="img"
-                            width={500}
-                            height={400}
-                          />
-                        </div>
-                      </div>
-                      <div className="col-lg-6 col-md-6">
-                        <div className="tabs_item_content mb-0">
-                          <h3>Branding</h3>
-                          <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Ut enim ad minim veniam, quis
-                            nostrud exercitation ullamco laboris nisi ut aliquip
-                            ex ea commodo.
-                          </p>
-                          <ul>
-                            <li>
-                              <i className="icofont-ui-check"></i> Creative
-                              Design
-                            </li>
-                            <li>
-                              <i className="icofont-ui-check"></i> Retina Ready
-                            </li>
-                            <li>
-                              <i className="icofont-ui-check"></i> Modern Design
-                            </li>
-                            <li>
-                              <i className="icofont-ui-check"></i> Digital
-                              Marketing & Branding
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </TabPanel>
-
-                  <TabPanel>
-                    <div className="row align-items-center">
-                      <div className="col-lg-6 col-md-6">
-                        <div className="tabs_item_content mt-0">
-                          <h3>Development</h3>
-                          <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Ut enim ad minim veniam, quis
-                            nostrud exercitation ullamco laboris nisi ut aliquip
-                            ex ea commodo.
-                          </p>
-                          <ul>
-                            <li>
-                              <i className="icofont-ui-check"></i> Creative
-                              Design
-                            </li>
-                            <li>
-                              <i className="icofont-ui-check"></i> Retina Ready
-                            </li>
-                            <li>
-                              <i className="icofont-ui-check"></i> Modern Design
-                            </li>
-                            <li>
-                              <i className="icofont-ui-check"></i> Digital
-                              Marketing & Branding
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div className="col-lg-6 col-md-6">
-                        <div className="tabs_item_img">
-                          <Image
-                            src="/img/2.png"
-                            alt="img"
-                            width={500}
-                            height={400}
-                          />
-                        </div>
-                      </div>
-                    </div>
-                  </TabPanel>
-
-                  <TabPanel>
-                    <div className="row align-items-center">
-                      <div className="col-lg-6 col-md-6">
-                        <div className="tabs_item_img">
-                          <Image
-                            src="/img/4.png"
-                            alt="img"
-                            width={500}
-                            height={400}
-                          />
-                        </div>
-                      </div>
-                      <div className="col-lg-6 col-md-6">
-                        <div className="tabs_item_content">
-                          <h3>Marketing</h3>
-                          <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Ut enim ad minim veniam, quis
-                            nostrud exercitation ullamco laboris nisi ut aliquip
-                            ex ea commodo.
-                          </p>
-                          <ul>
-                            <li>
-                              <i className="icofont-ui-check"></i> Creative
-                              Design
-                            </li>
-                            <li>
-                              <i className="icofont-ui-check"></i> Retina Ready
-                            </li>
-                            <li>
-                              <i className="icofont-ui-check"></i> Modern Design
-                            </li>
-                            <li>
-                              <i className="icofont-ui-check"></i> Digital
-                              Marketing & Branding
-                            </li>
-                          </ul>
                         </div>
                       </div>
                     </div>

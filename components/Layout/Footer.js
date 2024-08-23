@@ -1,192 +1,130 @@
-import React from "react";
-import Link from "next/link";
+import React from 'react';
+import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <>
-      <footer className="footer-area ptb-100">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-3 col-md-6">
-              <div className="single-footer">
-                <h4 className="logo">
-                  <Link href="/">
-                    Axo<span>lot</span>
-                  </Link>
-                </h4>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut. sed do eiusmod tempor
-                  incididunt ut, tempor incididunt ut.
-                </p>
-                <Link href="/about" className="btn btn-primary">
-                  Read More
+    <footer className="bg-gray-800 text-gray-300 pt-16 pb-8">
+      <div className="container mx-auto px-4">
+        <div className="flex flex-wrap justify-between">
+          <div className="w-full sm:w-1/2 lg:w-1/4 mb-8">
+            <h4 className="text-white text-xl font-semibold mb-4">Codemify</h4>
+            <p className="text-gray-400">
+              Codemify is dedicated to providing top-notch solutions that
+              empower our clients to achieve their goals. Join us on a journey
+              of innovation and excellence.
+            </p>
+          </div>
+
+          <div className="w-full sm:w-1/2 lg:w-1/4 mb-8">
+            <h4 className="text-white text-lg font-semibold mb-4">
+              Useful Links
+            </h4>
+            <ul className="space-y-2">
+              <li>
+                <Link href="/" className="hover:text-white">
+                  Home
                 </Link>
-              </div>
-            </div>
+              </li>
+              <li>
+                <Link href="#features" className="hover:text-white">
+                  Features
+                </Link>
+              </li>
+              <li>
+                <Link href="/about" className="hover:text-white">
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link href="/services" className="hover:text-white">
+                  Services
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact" className="hover:text-white">
+                  Contact
+                </Link>
+              </li>
+            </ul>
+          </div>
 
-            <div className="col-lg-3 col-md-6">
-              <div className="single-footer">
-                <h3>Useful Links</h3>
-                <ul>
-                  <li>
-                    <Link href="/">
-                      <i className="icofont-double-right"></i> Home
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="#">
-                      <i className="icofont-double-right"></i> Features
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/about">
-                      <i className="icofont-double-right"></i> About
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/services">
-                      <i className="icofont-double-right"></i> Services
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="#">
-                      <i className="icofont-double-right"></i> Blog
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/contact" target="_blank">
-                      <i className="icofont-double-right"></i> Contact
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
+          <div className="w-full sm:w-1/2 lg:w-1/4 mb-8">
+            <h4 className="text-white text-lg font-semibold mb-4">Support</h4>
+            <ul className="space-y-2">
+              <li>
+                <Link href="#" className="hover:text-white">
+                  Career
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact" className="hover:text-white">
+                  Support
+                </Link>
+              </li>
+              <li>
+                <Link href="/faq" className="hover:text-white">
+                  FAQ
+                </Link>
+              </li>
+            </ul>
+          </div>
 
-            <div className="col-lg-3 col-md-6">
-              <div className="single-footer">
-                <h3>Support</h3>
-                <ul>
-                  <li>
-                    <Link href="#">
-                      <i className="icofont-double-right"></i> Career
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/contact">
-                      <i className="icofont-double-right"></i> Support
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="#">
-                      <i className="icofont-double-right"></i> Resource
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="#">
-                      <i className="icofont-double-right"></i> Strategy
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/faq">
-                      <i className="icofont-double-right"></i> FAQ
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/contact">
-                      <i className="icofont-double-right"></i> Contact
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="col-lg-3 col-md-6">
-              <div className="single-footer">
-                <h3>Contact Info</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <ul className="contact-info">
-                  <li>
-                    <i className="icofont-google-map"></i> 2750 Quadra Street ,
-                    Park Area, Victoria, Canada.
-                  </li>
-                  <li>
-                    <i className="icofont-phone"></i> +(00) 01245687
-                  </li>
-                  <li>
-                    <i className="icofont-envelope"></i> support@axolot.com
-                  </li>
-                </ul>
-              </div>
+          <div className="w-full sm:w-1/2 lg:w-1/4 mb-8">
+            <h4 className="text-white text-lg font-semibold mb-4">
+              Contact Info
+            </h4>
+            <ul className="space-y-2">
+              <li>
+                <i className="icofont-phone"></i> 424-444-4522
+              </li>
+              <li>
+                <i className="icofont-envelope"></i> support@codemify.com
+              </li>
+            </ul>
+            <div className="mt-4">
+              <a
+                href="https://www.youtube.com/channel/UCT7YaGWYmKtcu53NkuB59PQ"
+                className="text-gray-400 hover:text-white mr-4"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i className="icofont-youtube"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/codemify_/"
+                className="text-gray-400 hover:text-white mr-4"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i className="icofont-instagram"></i>
+              </a>
+              <a
+                href="https://web.facebook.com/codemify?_rdc=1&_rdr"
+                className="text-gray-400 hover:text-white mr-4"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i className="icofont-facebook"></i>
+              </a>
+              <a
+                href="https://t.me/codemifyschool"
+                className="text-gray-400 hover:text-white"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i className="icofont-telegram"></i>
+              </a>
             </div>
           </div>
         </div>
 
-        <div className="copyright-area">
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-7 col-md-7">
-                <p>
-                  © Axolot is Proudly Owned by{" "}
-                  <a
-                    href="https://envytheme.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    EnvyTheme
-                  </a>
-                </p>
-              </div>
-
-              <div className="col-lg-5 col-md-5">
-                <ul>
-                  <li>
-                    <a
-                      href="https://www.facebook.com/"
-                      className="icofont-facebook"
-                      target="_blank"
-                      rel="noreferrer"
-                    ></a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.twitter.com/"
-                      className="icofont-twitter"
-                      target="_blank"
-                      rel="noreferrer"
-                    ></a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.instagram.com/"
-                      className="icofont-instagram"
-                      target="_blank"
-                      rel="noreferrer"
-                    ></a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.linkedin.com/"
-                      className="icofont-linkedin"
-                      target="_blank"
-                      rel="noreferrer"
-                    ></a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.vimeo.com/"
-                      className="icofont-vimeo"
-                      target="_blank"
-                      rel="noreferrer"
-                    ></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
+        <div className="mt-8 border-t border-gray-700 pt-8">
+          <div className="text-center text-gray-500">
+            © 2024 Codemify. All rights reserved.
           </div>
         </div>
-      </footer>
-    </>
+      </div>
+    </footer>
   );
 };
 

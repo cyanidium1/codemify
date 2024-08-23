@@ -1,9 +1,4 @@
 /*
-@File: Axolot Template Styles
-
-* This file contains the styling for the actual tepmlate, this
-is the file you need to edit to change the look of the
-tepmlate.
 
 This files table contents are outlined below>>>>>
 
@@ -36,10 +31,15 @@ This files table contents are outlined below>>>>>
 /* ==============
     Start Default CSS 
 ==================================== */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   padding: 0;
   margin: 0;
-  font-family: "Fira Sans", sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   font-size: 15px;
 }
 
@@ -62,7 +62,18 @@ a {
   transition: 0.4s;
 }
 
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #222222;
 }
 
@@ -70,7 +81,7 @@ p {
   margin-bottom: 0;
   font-size: 15px;
   line-height: 1.8;
-  color: #6F8BA4;
+  color: #6f8ba4;
 }
 
 .mt-75 {
@@ -146,7 +157,7 @@ textarea.form-control {
   max-width: 520px;
 }
 .section-title h3::before {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   bottom: 0;
@@ -166,7 +177,7 @@ textarea.form-control {
 .owl-theme .owl-nav {
   margin-top: 0;
 }
-.owl-theme .owl-nav [class*=owl-] {
+.owl-theme .owl-nav [class*='owl-'] {
   font-size: 17px !important;
   margin: 0 !important;
   padding: 0 !important;
@@ -184,7 +195,7 @@ textarea.form-control {
   line-height: 150px;
   transition: 0.4s;
 }
-.owl-theme .owl-nav [class*=owl-]:hover {
+.owl-theme .owl-nav [class*='owl-']:hover {
   color: #ffffff !important;
   background: #506cea !important;
 }
@@ -192,7 +203,7 @@ textarea.form-control {
   left: auto;
   right: 20px;
 }
-.owl-theme:hover .owl-nav [class*=owl-] {
+.owl-theme:hover .owl-nav [class*='owl-'] {
   opacity: 1;
   overflow: visible;
   left: 0;
@@ -211,12 +222,12 @@ textarea.form-control {
   overflow: hidden;
 }
 .btn::before {
-  content: "";
+  content: '';
   position: absolute;
   display: block;
   width: 200px;
-  height: 100px;
-  transform: translate3d(-120%, -50px, 0) rotate3d(0, 0, 1, 45deg);
+  height: 200px;
+  transform: translate3d(-150%, -50px, 0) rotate3d(0, 0, 1, 45deg);
   transition: all 1.1s cubic-bezier(0.19, 1, 0.22, 1);
   background: rgba(255, 255, 255, 0.5);
   left: 0;
@@ -224,7 +235,7 @@ textarea.form-control {
 }
 .btn:hover::before {
   background: #ffffff;
-  transform: translate3d(120%, -100px, 0) rotate3d(0, 0, 1, 90deg);
+  transform: translate3d(300%, -50px, 0) rotate3d(0, 0, 1, 90deg);
 }
 
 .btn-primary {
@@ -232,13 +243,18 @@ textarea.form-control {
   border-color: #506cea;
   color: #ffffff;
 }
-.btn-primary.focus, .btn-primary:focus {
+.btn-primary.focus,
+.btn-primary:focus {
   box-shadow: none;
 }
-.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary .show > .btn-primary.dropdown-toggle:focus {
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.btn-primary .show > .btn-primary.dropdown-toggle:focus {
   box-shadow: none;
 }
-.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .btn-primary .show > .btn-primary.dropdown-toggle {
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary .show > .btn-primary.dropdown-toggle {
   color: #ffffff;
   background-color: #506cea;
   border-color: #506cea;
@@ -248,7 +264,8 @@ textarea.form-control {
   background-color: #506cea;
   border-color: #506cea;
 }
-.btn-primary.disabled, .btn-primary:disabled {
+.btn-primary.disabled,
+.btn-primary:disabled {
   opacity: 1;
   background-color: #506cea;
   border-color: #506cea;
@@ -264,13 +281,18 @@ textarea.form-control {
   background-color: #f06334;
   border-color: #f06334;
 }
-.btn-secondary:not(:disabled):not(.disabled).active:focus, .btn-secondary:not(:disabled):not(.disabled):active:focus, .btn-secondary .show > .btn-secondary.dropdown-toggle:focus {
+.btn-secondary:not(:disabled):not(.disabled).active:focus,
+.btn-secondary:not(:disabled):not(.disabled):active:focus,
+.btn-secondary .show > .btn-secondary.dropdown-toggle:focus {
   box-shadow: none;
 }
-.btn-secondary.focus, .btn-secondary:focus {
+.btn-secondary.focus,
+.btn-secondary:focus {
   box-shadow: none;
 }
-.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary .show > .btn-secondary.dropdown-toggle {
+.btn-secondary:not(:disabled):not(.disabled).active,
+.btn-secondary:not(:disabled):not(.disabled):active,
+.btn-secondary .show > .btn-secondary.dropdown-toggle {
   color: #ffffff;
   background-color: #f06334;
   border-color: #f06334;
@@ -323,7 +345,9 @@ textarea.form-control {
   margin-left: 15px;
   margin-right: 15px;
 }
-.bg-light .navbar-nav li .nav-link:focus, .bg-light .navbar-nav li .nav-link:hover, .bg-light .navbar-nav li .nav-link.active {
+.bg-light .navbar-nav li .nav-link:focus,
+.bg-light .navbar-nav li .nav-link:hover,
+.bg-light .navbar-nav li .nav-link.active {
   color: #506cea;
 }
 .bg-light .navbar-nav li .nav-link:last-child {
@@ -349,7 +373,8 @@ textarea.form-control {
   background: transparent;
   color: #333333;
 }
-.bg-light .navbar-nav li .dropdown-menu li a:hover, .bg-light .navbar-nav li .dropdown-menu li a.active {
+.bg-light .navbar-nav li .dropdown-menu li a:hover,
+.bg-light .navbar-nav li .dropdown-menu li a.active {
   color: #506cea;
 }
 .bg-light .navbar-nav li:hover .dropdown-menu {
@@ -528,7 +553,7 @@ textarea.form-control {
   z-index: 1;
 }
 .banner-form::before {
-  content: "";
+  content: '';
   position: absolute;
   z-index: -1;
   background: #ffffff;
@@ -547,7 +572,7 @@ textarea.form-control {
   border-radius: 2px;
 }
 .banner-form form label {
-  color: #6F8BA4;
+  color: #6f8ba4;
   margin-bottom: 8px;
   font-size: 15px;
 }
@@ -572,7 +597,7 @@ textarea.form-control {
   border-radius: 2px;
 }
 .hero-form form label {
-  color: #6F8BA4;
+  color: #6f8ba4;
   margin-bottom: 8px;
   font-size: 15px;
 }
@@ -585,7 +610,8 @@ textarea.form-control {
   width: 100%;
   margin-top: 25px;
 }
-.hero-form form .btn::before, .hero-form form .btn::after {
+.hero-form form .btn::before,
+.hero-form form .btn::after {
   display: none;
 }
 
@@ -629,7 +655,9 @@ textarea.form-control {
 .single-features:hover {
   background: #506cea;
 }
-.single-features:hover h3, .single-features:hover p, .single-features:hover i {
+.single-features:hover h3,
+.single-features:hover p,
+.single-features:hover i {
   color: #ffffff;
 }
 
@@ -663,7 +691,7 @@ textarea.form-control {
   list-style-type: none;
 }
 .about-content ul li {
-  color: #6F8BA4;
+  color: #6f8ba4;
   margin-top: 10px;
   font-weight: 400;
   text-align: left;
@@ -703,7 +731,7 @@ textarea.form-control {
   margin-top: 15px;
 }
 .about-text ul li {
-  color: #6F8BA4;
+  color: #6f8ba4;
   margin-top: 10px;
   font-weight: 400;
 }
@@ -772,7 +800,8 @@ textarea.form-control {
   background: #ffffff;
   color: #506cea;
 }
-.single-services:hover h3, .single-services:hover p {
+.single-services:hover h3,
+.single-services:hover p {
   color: #ffffff;
 }
 
@@ -878,7 +907,7 @@ textarea.form-control {
   position: relative;
 }
 .funfacts-area::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   height: 100%;
@@ -898,8 +927,9 @@ textarea.form-control {
 .funFact:hover {
   transform: translateY(-5px);
 }
-.funFact::before, .funFact::after {
-  content: "";
+.funFact::before,
+.funFact::after {
+  content: '';
   position: absolute;
   width: 2px;
   height: 75px;
@@ -940,7 +970,8 @@ textarea.form-control {
   line-height: 22px;
   margin-bottom: 0;
 }
-.funFact:hover::before, .funFact:hover::after {
+.funFact:hover::before,
+.funFact:hover::after {
   height: 0;
 }
 .funFact:hover i {
@@ -1024,7 +1055,7 @@ textarea.form-control {
   position: relative;
 }
 .single-box.with-line::before {
-  content: "";
+  content: '';
   position: absolute;
   z-index: 1;
   background: url(/img/arrow-big.png) no-repeat center center;
@@ -1071,7 +1102,7 @@ textarea.form-control {
   position: relative;
 }
 .our-team .pic::before {
-  content: "";
+  content: '';
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -1131,7 +1162,7 @@ textarea.form-control {
 }
 .our-team .post {
   display: inline-block;
-  color: #6F8BA4;
+  color: #6f8ba4;
 }
 .our-team:hover .pic::before {
   opacity: 1;
@@ -1154,7 +1185,7 @@ textarea.form-control {
   position: relative;
 }
 .single-team .pic::before {
-  content: "";
+  content: '';
   width: 100%;
   height: 100%;
   position: absolute;
@@ -1169,7 +1200,7 @@ textarea.form-control {
   transition: 0.4s;
 }
 .single-team .pic::after {
-  content: "";
+  content: '';
   width: 100%;
   height: 100%;
   position: absolute;
@@ -1229,10 +1260,11 @@ textarea.form-control {
 }
 .single-team .team-content .post {
   display: inline-block;
-  color: #6F8BA4;
+  color: #6f8ba4;
   position: relative;
 }
-.single-team:hover .pic::before, .single-team:hover .pic::after {
+.single-team:hover .pic::before,
+.single-team:hover .pic::after {
   opacity: 1;
   visibility: visible;
 }
@@ -1295,7 +1327,8 @@ textarea.form-control {
   display: inline-block;
   color: #506cea;
 }
-.testimonials-item .client-info .client-title span, .testimonials-item .client-info .client-title h4 {
+.testimonials-item .client-info .client-title span,
+.testimonials-item .client-info .client-title h4 {
   position: relative;
   z-index: 1;
   transition: 0.4s;
@@ -1316,7 +1349,8 @@ textarea.form-control {
 .testimonials-item:hover {
   background: #506cea;
 }
-.testimonials-item:hover .client-info .client-title span, .testimonials-item:hover .client-info .client-title h4 {
+.testimonials-item:hover .client-info .client-title span,
+.testimonials-item:hover .client-info .client-title h4 {
   color: #ffffff;
 }
 .testimonials-item:hover p {
@@ -1432,8 +1466,9 @@ textarea.form-control {
   position: relative;
   background: #506cea;
 }
-.pricingTable .title::before, .pricingTable .title::after {
-  content: "";
+.pricingTable .title::before,
+.pricingTable .title::after {
+  content: '';
   width: 280px;
   height: 200px;
   border-radius: 80px;
@@ -1978,7 +2013,7 @@ section.route-section {
   padding-bottom: 300px;
 }
 .repair-main-banner::before {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 0;
   left: 0;
@@ -2023,7 +2058,7 @@ section.route-section {
 }
 .banner-video a::after {
   z-index: -1;
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   top: 0;
@@ -2034,7 +2069,8 @@ section.route-section {
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.5);
 }
-.banner-video a:hover, .banner-video a:focus {
+.banner-video a:hover,
+.banner-video a:focus {
   background-color: #4457c3;
   color: #ffffff;
 }
@@ -2050,7 +2086,8 @@ section.route-section {
 }
 
 @keyframes ripple {
-  0%, 35% {
+  0%,
+  35% {
     transform: scale(0);
     opacity: 1;
   }
@@ -2080,7 +2117,7 @@ section.route-section {
   padding-bottom: 40px;
 }
 .repair-boxes-area::before {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   height: 90%;
@@ -2121,7 +2158,8 @@ section.route-section {
   display: inline-block;
   transition: 0.5s;
 }
-.single-repair-box a:hover, .single-repair-box a:focus {
+.single-repair-box a:hover,
+.single-repair-box a:focus {
   color: #4457c3;
   text-decoration: none;
   letter-spacing: 1.5px;
@@ -2149,8 +2187,9 @@ section.route-section {
   visibility: hidden;
   transition: 0.5s;
 }
-.single-repair-box::before, .single-repair-box::after {
-  content: "";
+.single-repair-box::before,
+.single-repair-box::after {
+  content: '';
   position: absolute;
   top: -40px;
   left: 0;
@@ -2183,7 +2222,8 @@ section.route-section {
 .single-repair-box.active a {
   color: #ffffff;
 }
-.single-repair-box.active::before, .single-repair-box.active::after {
+.single-repair-box.active::before,
+.single-repair-box.active::after {
   opacity: 1;
   visibility: visible;
 }
@@ -2318,7 +2358,7 @@ section.route-section {
   color: #ffffff;
 }
 .repair-services-area::before {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   bottom: 0;
@@ -2363,23 +2403,31 @@ section.route-section {
 .single-repair-services .read-more-btn:hover {
   text-decoration: none;
 }
-.single-repair-services:hover, .single-repair-services:focus {
+.single-repair-services:hover,
+.single-repair-services:focus {
   background-color: #ffffff;
   border-color: #ffffff;
 }
-.single-repair-services:hover i, .single-repair-services:focus i {
+.single-repair-services:hover i,
+.single-repair-services:focus i {
   color: #f06334;
 }
-.single-repair-services:hover h3, .single-repair-services:focus h3 {
+.single-repair-services:hover h3,
+.single-repair-services:focus h3 {
   color: #222222;
 }
-.single-repair-services:hover p, .single-repair-services:focus p {
-  color: #6F8BA4;
+.single-repair-services:hover p,
+.single-repair-services:focus p {
+  color: #6f8ba4;
 }
-.single-repair-services:hover .read-more-btn, .single-repair-services:focus .read-more-btn {
+.single-repair-services:hover .read-more-btn,
+.single-repair-services:focus .read-more-btn {
   color: #4457c3;
 }
-.single-repair-services:hover .read-more-btn:hover, .single-repair-services:hover .read-more-btn:focus, .single-repair-services:focus .read-more-btn:hover, .single-repair-services:focus .read-more-btn:focus {
+.single-repair-services:hover .read-more-btn:hover,
+.single-repair-services:hover .read-more-btn:focus,
+.single-repair-services:focus .read-more-btn:hover,
+.single-repair-services:focus .read-more-btn:focus {
   color: #f06334;
 }
 
@@ -2426,7 +2474,9 @@ section.route-section {
   opacity: 1;
   border-radius: 0;
 }
-.repair-services-slides .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+.repair-services-slides
+  .swiper-pagination
+  .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: #fff;
 }
 .repair-services-slides.owl-theme .owl-dots {
@@ -2441,7 +2491,8 @@ section.route-section {
   transition: 0.4s;
   border-radius: 0;
 }
-.repair-services-slides.owl-theme .owl-dots .owl-dot:hover span, .repair-services-slides.owl-theme .owl-dots .owl-dot:focus span {
+.repair-services-slides.owl-theme .owl-dots .owl-dot:hover span,
+.repair-services-slides.owl-theme .owl-dots .owl-dot:focus span {
   background: #ffffff;
 }
 .repair-services-slides.owl-theme .owl-dots .owl-dot.active span {
@@ -2522,7 +2573,9 @@ section.route-section {
   border-radius: 0;
   opacity: 1;
 }
-.repair-feedback-slides .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+.repair-feedback-slides
+  .swiper-pagination
+  .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background: #4457c3;
 }
 
@@ -2560,7 +2613,8 @@ section.route-section {
 .single-gallery-item a img {
   transition: all 1.5s ease-out;
 }
-.single-gallery-item:hover a img, .single-gallery-item:focus a img {
+.single-gallery-item:hover a img,
+.single-gallery-item:focus a img {
   transform: scale(1.4);
 }
 
@@ -2586,7 +2640,9 @@ section.route-section {
   font-size: 15px;
   font-weight: 500;
 }
-.gallery-shorting-menu .filter:hover, .gallery-shorting-menu .filter:focus, .gallery-shorting-menu .filter.active {
+.gallery-shorting-menu .filter:hover,
+.gallery-shorting-menu .filter:focus,
+.gallery-shorting-menu .filter.active {
   background-color: #4457c3;
   color: #ffffff;
   border-color: #4457c3;
@@ -2667,7 +2723,8 @@ Start Repair Partner CSS
 .single-repair-blog-post .blog-content h3 a {
   color: #222222;
 }
-.single-repair-blog-post .blog-content h3 a:hover, .single-repair-blog-post .blog-content h3 a:focus {
+.single-repair-blog-post .blog-content h3 a:hover,
+.single-repair-blog-post .blog-content h3 a:focus {
   color: #4457c3;
   text-decoration: none;
 }
@@ -2683,12 +2740,12 @@ Start Repair Partner CSS
 }
 .single-repair-blog-post .blog-content ul li {
   display: inline-block;
-  color: #6F8BA4;
+  color: #6f8ba4;
   position: relative;
   margin-right: 18px;
 }
 .single-repair-blog-post .blog-content ul li::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -2698,9 +2755,10 @@ Start Repair Partner CSS
   left: -13px;
 }
 .single-repair-blog-post .blog-content ul li a {
-  color: #6F8BA4;
+  color: #6f8ba4;
 }
-.single-repair-blog-post .blog-content ul li a:hover, .single-repair-blog-post .blog-content ul li a:focus {
+.single-repair-blog-post .blog-content ul li a:hover,
+.single-repair-blog-post .blog-content ul li a:focus {
   color: #4457c3;
   text-decoration: none;
 }
@@ -2718,10 +2776,12 @@ Start Repair Partner CSS
   text-transform: uppercase;
   color: #f06334;
 }
-.single-repair-blog-post .blog-content ul li:last-child a:hover, .single-repair-blog-post .blog-content ul li:last-child a:focus {
+.single-repair-blog-post .blog-content ul li:last-child a:hover,
+.single-repair-blog-post .blog-content ul li:last-child a:focus {
   color: #4457c3;
 }
-.single-repair-blog-post:hover .blog-image a img, .single-repair-blog-post:focus .blog-image a img {
+.single-repair-blog-post:hover .blog-image a img,
+.single-repair-blog-post:focus .blog-image a img {
   transform: scale(1.3);
 }
 
@@ -2781,7 +2841,8 @@ Start Repair Partner CSS
 .repair-subscribe-content form .form-group .input-newsletter::placeholder {
   color: #ffffff;
 }
-.repair-subscribe-content form .validation-danger, .repair-subscribe-content form .validation-success {
+.repair-subscribe-content form .validation-danger,
+.repair-subscribe-content form .validation-success {
   color: #ffffff;
 }
 .repair-subscribe-content form .btn {
@@ -2793,7 +2854,8 @@ Start Repair Partner CSS
   border-color: #f06334;
   background-color: #f06334;
 }
-.repair-subscribe-content form .btn-primary.disabled, .repair-subscribe-content form .btn-primary:disabled {
+.repair-subscribe-content form .btn-primary.disabled,
+.repair-subscribe-content form .btn-primary:disabled {
   color: #ffffff;
   background-color: #f06334;
   border-color: #f06334;
@@ -2812,7 +2874,7 @@ Start Repair Partner CSS
   overflow: hidden;
 }
 .repair-footer-area::after {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   height: 100%;
@@ -2919,7 +2981,8 @@ Start Repair Partner CSS
   background-color: #343434;
   color: #ffffff;
 }
-.social-links li a:hover, .social-links li a:focus {
+.social-links li a:hover,
+.social-links li a:focus {
   background: #f06334;
   color: #ffffff;
 }
@@ -2949,7 +3012,7 @@ Start Repair Partner CSS
   font-size: 15px;
 }
 .repair-copyright-area ul li::before {
-  content: "";
+  content: '';
   position: absolute;
   left: -13px;
   top: 5px;
@@ -3069,4 +3132,4 @@ Start Repair Partner CSS
 
 .error-content {
   text-align: center;
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */

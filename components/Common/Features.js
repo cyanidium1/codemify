@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const Features = () => {
   return (
@@ -6,11 +6,11 @@ const Features = () => {
       <section id="features" className="features-area bg-gray ptb-100">
         <div className="container">
           <div className="section-title">
-            <span>Features</span>
-            <h3>Our Amazing Features</h3>
+            <span>Why QA?</span>
+            <h3>Why you should choose a career in QA</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Quality Assurance plays a vital role in ensuring the success and
+              reliability of software products.
             </p>
           </div>
 
@@ -23,10 +23,10 @@ const Features = () => {
             >
               <div className="single-features">
                 <i className="icofont-hand-drag1"></i>
-                <h3>Drag and drop</h3>
+                <h3>High Demand</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod.
+                  QA professionals are in high demand, providing numerous
+                  opportunities in IT sphere.
                 </p>
               </div>
             </div>
@@ -39,10 +39,10 @@ const Features = () => {
             >
               <div className="single-features">
                 <i className="icofont-diamond"></i>
-                <h3>Fully customizable</h3>
+                <h3>Skill Development</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod.
+                  A career in QA allows you to develop a diverse range of
+                  technical and analytical skills.
                 </p>
               </div>
             </div>
@@ -55,14 +55,14 @@ const Features = () => {
             >
               <div className="single-features">
                 <i className="icofont-responsive"></i>
-                <h3>Fully responsive</h3>
+                <h3>Career Growth</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod.
+                  QA offers clear advancement paths, with many opportunities to
+                  move into senior roles.
                 </p>
               </div>
             </div>
-            
+
             <div
               className="col-lg-3 col-md-6"
               data-aos="fade-up"
@@ -71,10 +71,10 @@ const Features = () => {
             >
               <div className="single-features">
                 <i className="icofont-rocket"></i>
-                <h3>App integration</h3>
+                <h3>Work-Life Balance</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod.
+                  QA roles often provide flexible working conditions, ensuring a
+                  healthy work-life balance.
                 </p>
               </div>
             </div>

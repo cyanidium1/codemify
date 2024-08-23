@@ -1,33 +1,36 @@
 import React from 'react';
-import MultipageNavbar from '@/components/Layout/MultipageNavbar';
+import OnePageNavbar from '@/components/Layout/OnePageNavbar';
+import AboutUs from '@/components/HomePages/OnePageDemo/AboutUs';
+import ServicesSlider from '@/components/HomePages/OnePageDemo/ServicesSlider';
+import ServicesTab from '@/components/HomePages/OnePageDemo/ServicesTab';
+import FunFacts from '@/components/HomePages/OnePageDemo/FunFacts';
+import JoinClients from '@/components/HomePages/OnePageDemo/JoinClients';
+import HowItWorks from '@/components/HomePages/OnePageDemo/HowItWorks';
+import TeamSlider from '@/components/HomePages/OnePageDemo/TeamSlider';
+import Testimonials from '@/components/HomePages/OnePageDemo/Testimonials';
+import FaqContent from '@/components/HomePages/OnePageDemo/FaqContent';
+import Pricing from '@/components/HomePages/OnePageDemo/Pricing';
+import Partners from '@/components/HomePages/OnePageDemo/Partners';
+import SubscribeForm from '@/components/HomePages/OnePageDemo/SubscribeForm';
+import Footer from '@/components/Layout/Footer';
+import VideoMain from '@/components/HomePages/VideoMain';
 import MainBanner from '@/components/HomePages/MainBanner';
 import Features from '@/components/Common/Features';
-import AboutUs from '@/components/Common/AboutUs';
-import ServicesSlider from '@/components/Common/ServicesSlider';
-import ServicesTab from '@/components/Common/ServicesTab';
-import FunFacts from '@/components/Common/FunFacts';
-import JoinClients from '@/components/Common/JoinClients';
-import HowItWorks from '@/components/Common/HowItWorks';
-import TeamSlider from '@/components/Common/TeamSlider';
-import Testimonials from '@/components/Common/Testimonials';
-import FaqContent from '@/components/Common/FaqContent';
-import Pricing from '@/components/Common/Pricing';
-import Partners from '@/components/Common/Partners';
-import SubscribeForm from '@/components/Common/SubscribeForm';
-import Footer from '@/components/Layout/Footer';
- 
-export default function Index() {
+
+export default function Index8() {
   return (
     <>
-      <MultipageNavbar />
+      <OnePageNavbar />
 
-      <MainBanner /> 
+      <VideoMain />
+
+      <MainBanner />
 
       <Features />
-      
+
       <AboutUs />
 
-      <ServicesSlider />
+      {/* <ServicesSlider /> */}
 
       <ServicesTab />
 
@@ -37,13 +40,13 @@ export default function Index() {
 
       <HowItWorks />
 
-      <TeamSlider />
+      {/* <TeamSlider /> */}
 
       <Testimonials />
 
       <FaqContent />
 
-      <Pricing />
+      {/* <Pricing /> */}
 
       <Partners />
 
@@ -51,5 +54,5 @@ export default function Index() {
 
       <Footer />
     </>
-  )
+  );
 }

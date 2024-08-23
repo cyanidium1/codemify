@@ -1,6 +1,6 @@
-import React from "react";
-import Link from "next/link";
-import Image from "next/image";
+import React from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
 
 const JoinClients = () => {
   return (
@@ -20,19 +20,21 @@ const JoinClients = () => {
 
             <div className="col-lg-6 col-md-6">
               <div className="join-content">
-                <h3>Overall 400k+ Our Clients Please Get Start Now</h3>
+                <h3>
+                  Over 100 Clients Have Successfully Completed Our Courses
+                </h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo.
+                  Join the growing community of professionals who have boosted
+                  their careers through our comprehensive and practical training
+                  programs. Our courses are designed to equip you with the
+                  skills and knowledge needed to succeed in the industry.
                 </p>
-                
+
                 <Link href="#" className="btn btn-primary">
                   Join Now
                 </Link>
                 <Link href="#" className="btn btn-secondary">
-                  For Free trial
+                  Start Free Trial
                 </Link>
               </div>
             </div>

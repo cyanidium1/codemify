@@ -1,113 +1,132 @@
-import React from "react";
-import Link from "next/link";
+import React from 'react';
+import Link from 'next/link';
 
 const OnePageNavbar = () => {
   const [menu, setMenu] = React.useState(true);
   const toggleNavbar = () => {
     setMenu(!menu);
   };
-  React.useEffect(() => {
-    let elementId = document.getElementById("navbar");
-    document.addEventListener("scroll", () => {
-      if (window.scrollY > 170) {
-        elementId.classList.add("is-sticky");
-      } else {
-        elementId.classList.remove("is-sticky");
-      }
-    });
-  });
 
-  const classOne = menu
-    ? "collapse navbar-collapse mean-menu"
-    : "collapse navbar-collapse show";
-  const classTwo = menu
-    ? "navbar-toggler navbar-toggler-right collapsed"
-    : "navbar-toggler navbar-toggler-right";
+  React.useEffect(() => {
+    const elementId = document.getElementById('navbar');
+    const handleScroll = () => {
+      if (window.scrollY > 170) {
+        elementId.classList.add('is-sticky');
+      } else {
+        elementId.classList.remove('is-sticky');
+      }
+    };
+
+    document.addEventListener('scroll', handleScroll);
+    return () => {
+      document.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const navbarClasses = menu
+    ? 'collapse navbar-collapse mean-menu'
+    : 'collapse navbar-collapse show';
+  const buttonClasses = menu ? 'navbar-toggler collapsed' : 'navbar-toggler';
 
   return (
     <>
       <nav
         id="navbar"
-        className="navbar navbar-expand-md navbar-light bg-light fixed-top"
+        className="fixed-top w-full bg-white shadow-md transition-all duration-300 ease-in-out py-4"
       >
-        <div className="container">
-          <Link href="/" className="navbar-brand">
-            Axo<span>lot</span>
+        <div className="container mx-auto px-4 flex items-center justify-between">
+          <Link href="/" className="text-xl font-bold text-gray-800">
+            &lt;<span className="text-blue-600">odemify</span>
           </Link>
 
           <button
             onClick={toggleNavbar}
-            className={classTwo}
+            className={`${buttonClasses} text-gray-800 focus:outline-none md:hidden`}
             type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span className="icon-bar top-bar"></span>
-            <span className="icon-bar middle-bar"></span>
-            <span className="icon-bar bottom-bar"></span>
+            <span className="block w-6 h-0.5 bg-gray-800 mb-1"></span>
+            <span className="block w-6 h-0.5 bg-gray-800 mb-1"></span>
+            <span className="block w-6 h-0.5 bg-gray-800"></span>
           </button>
 
-          <div className={classOne} id="navbarSupportedContent">
-            <ul className="navbar-nav ms-auto">
-              <li className="nav-item">
-                <Link href="#home" className="nav-link" onClick={toggleNavbar}>
+          <div
+            className={`${
+              menu ? 'hidden' : 'block'
+            } w-full md:flex md:items-center md:w-auto`}
+            id="navbarSupportedContent"
+          >
+            <ul className="flex flex-col md:flex-row md:space-x-6 space-y-2 md:space-y-0 text-xl">
+              <li>
+                <Link
+                  href="#home"
+                  className="block py-2 text-gray-800 hover:text-blue-600 transition duration-300"
+                  onClick={toggleNavbar}
+                >
                   Home
                 </Link>
               </li>
-
-              <li className="nav-item">
+              <li>
                 <Link
                   href="#features"
-                  className="nav-link"
+                  className="block py-2 text-gray-800 hover:text-blue-600 transition duration-300"
                   onClick={toggleNavbar}
                 >
                   Features
                 </Link>
               </li>
-
-              <li className="nav-item">
-                <Link href="#about" className="nav-link" onClick={toggleNavbar}>
+              <li>
+                <Link
+                  href="#about"
+                  className="block py-2 text-gray-800 hover:text-blue-600 transition duration-300"
+                  onClick={toggleNavbar}
+                >
                   About
                 </Link>
               </li>
-
-              <li className="nav-item">
+              <li>
                 <Link
                   href="#services"
-                  className="nav-link"
+                  className="block py-2 text-gray-800 hover:text-blue-600 transition duration-300"
                   onClick={toggleNavbar}
                 >
                   Services
                 </Link>
               </li>
-
-              <li className="nav-item">
-                <Link href="#team" className="nav-link" onClick={toggleNavbar}>
+              {/* <li>
+                <Link
+                  href="#team"
+                  className="block py-2 text-gray-800 hover:text-blue-600 transition duration-300"
+                  onClick={toggleNavbar}
+                >
                   Team
                 </Link>
-              </li>
-
-              <li className="nav-item">
-                <Link href="#faq" className="nav-link" onClick={toggleNavbar}>
+              </li> */}
+              <li>
+                <Link
+                  href="#faq"
+                  className="block py-2 text-gray-800 hover:text-blue-600 transition duration-300"
+                  onClick={toggleNavbar}
+                >
                   Faq
                 </Link>
               </li>
-
-              <li className="nav-item">
+              <li>
                 <Link
                   href="#pricing"
-                  className="nav-link"
+                  className="block py-2 text-gray-800 hover:text-blue-600 transition duration-300"
                   onClick={toggleNavbar}
                 >
                   Pricing
                 </Link>
               </li>
-
-              <li className="nav-item">
-                <Link href="/contact" className="nav-link">
+              <li>
+                <Link
+                  href="/contact"
+                  className="block py-2 text-gray-800 hover:text-blue-600 transition duration-300"
+                >
                   Contact
                 </Link>
               </li>

@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from "react";
-import { useRouter } from "next/router";
-import Link from "next/link";
+import React, { useState, useEffect } from 'react';
+import { useRouter } from 'next/router';
+import Link from 'next/link';
 
 const MultipageNavbar = () => {
   // Add active class
-  const [currentPath, setCurrentPath] = useState("");
+  const [currentPath, setCurrentPath] = useState('');
   const router = useRouter();
   // console.log(router.asPath)
 
@@ -17,22 +17,22 @@ const MultipageNavbar = () => {
     setMenu(!menu);
   };
   React.useEffect(() => {
-    let elementId = document.getElementById("navbar");
-    document.addEventListener("scroll", () => {
+    let elementId = document.getElementById('navbar');
+    document.addEventListener('scroll', () => {
       if (window.scrollY > 170) {
-        elementId.classList.add("is-sticky");
+        elementId.classList.add('is-sticky');
       } else {
-        elementId.classList.remove("is-sticky");
+        elementId.classList.remove('is-sticky');
       }
     });
   });
 
   const classOne = menu
-    ? "collapse navbar-collapse mean-menu"
-    : "collapse navbar-collapse show";
+    ? 'collapse navbar-collapse mean-menu'
+    : 'collapse navbar-collapse show';
   const classTwo = menu
-    ? "navbar-toggler navbar-toggler-right collapsed"
-    : "navbar-toggler navbar-toggler-right";
+    ? 'navbar-toggler navbar-toggler-right collapsed'
+    : 'navbar-toggler navbar-toggler-right';
 
   return (
     <>
@@ -41,8 +41,9 @@ const MultipageNavbar = () => {
         className="navbar navbar-expand-md navbar-light bg-light fixed-top"
       >
         <div className="container">
-          <Link href="/" className="navbar-brand">
-            Axo<span>lot</span>
+          <Link href="/" className=" flex items-center">
+            <span className="text-4xl text-yellow-400">&lt;</span>
+            <span className="text-black text-2xl">odemify</span>
           </Link>
 
           <button
@@ -75,7 +76,7 @@ const MultipageNavbar = () => {
                   <li className="nav-item">
                     <Link
                       href="/"
-                      className={`nav-link ${currentPath == "/" && "active"}`}
+                      className={`nav-link ${currentPath == '/' && 'active'}`}
                     >
                       Home Demo - 1
                     </Link>
@@ -85,7 +86,7 @@ const MultipageNavbar = () => {
                     <Link
                       href="/index-2/"
                       className={`nav-link ${
-                        currentPath == "/index-2/" && "active"
+                        currentPath == '/index-2/' && 'active'
                       }`}
                     >
                       Home Demo - 2
@@ -96,7 +97,7 @@ const MultipageNavbar = () => {
                     <Link
                       href="/index-3/"
                       className={`nav-link ${
-                        currentPath == "/index-3/" && "active"
+                        currentPath == '/index-3/' && 'active'
                       }`}
                     >
                       Home Demo - 3
@@ -107,7 +108,7 @@ const MultipageNavbar = () => {
                     <Link
                       href="/index-4/"
                       className={`nav-link ${
-                        currentPath == "/index-4/" && "active"
+                        currentPath == '/index-4/' && 'active'
                       }`}
                     >
                       Home Demo - 4
@@ -118,7 +119,7 @@ const MultipageNavbar = () => {
                     <Link
                       href="/index-5/"
                       className={`nav-link ${
-                        currentPath == "/index-5/" && "active"
+                        currentPath == '/index-5/' && 'active'
                       }`}
                     >
                       Home Demo - 5
@@ -129,7 +130,7 @@ const MultipageNavbar = () => {
                     <Link
                       href="/index-6/"
                       className={`nav-link ${
-                        currentPath == "/index-6/" && "active"
+                        currentPath == '/index-6/' && 'active'
                       }`}
                     >
                       Home Demo - 6
@@ -140,7 +141,7 @@ const MultipageNavbar = () => {
                     <Link
                       href="/index-7/"
                       className={`nav-link ${
-                        currentPath == "/index-7/" && "active"
+                        currentPath == '/index-7/' && 'active'
                       }`}
                     >
                       Home Demo - 7
@@ -151,7 +152,7 @@ const MultipageNavbar = () => {
                     <Link
                       href="/index-8/"
                       className={`nav-link ${
-                        currentPath == "/index-8/" && "active"
+                        currentPath == '/index-8/' && 'active'
                       }`}
                     >
                       One Page Template
@@ -163,7 +164,7 @@ const MultipageNavbar = () => {
               <li className="nav-item">
                 <Link
                   href="/about/"
-                  className={`nav-link ${currentPath == "/about/" && "active"}`}
+                  className={`nav-link ${currentPath == '/about/' && 'active'}`}
                 >
                   About
                 </Link>
@@ -173,7 +174,7 @@ const MultipageNavbar = () => {
                 <Link
                   href="/services/"
                   className={`nav-link ${
-                    currentPath == "/services/" && "active"
+                    currentPath == '/services/' && 'active'
                   }`}
                 >
                   Services
@@ -183,7 +184,7 @@ const MultipageNavbar = () => {
               <li className="nav-item">
                 <Link
                   href="/team/"
-                  className={`nav-link ${currentPath == "/team/" && "active"}`}
+                  className={`nav-link ${currentPath == '/team/' && 'active'}`}
                 >
                   Team
                 </Link>
@@ -192,7 +193,7 @@ const MultipageNavbar = () => {
               <li className="nav-item">
                 <Link
                   href="/faq/"
-                  className={`nav-link ${currentPath == "/faq/" && "active"}`}
+                  className={`nav-link ${currentPath == '/faq/' && 'active'}`}
                 >
                   Faq
                 </Link>
@@ -202,7 +203,7 @@ const MultipageNavbar = () => {
                 <Link
                   href="/pricing/"
                   className={`nav-link ${
-                    currentPath == "/pricing/" && "active"
+                    currentPath == '/pricing/' && 'active'
                   }`}
                 >
                   Pricing
@@ -213,7 +214,7 @@ const MultipageNavbar = () => {
                 <Link
                   href="/contact/"
                   className={`nav-link ${
-                    currentPath == "/contact/" && "active"
+                    currentPath == '/contact/' && 'active'
                   }`}
                 >
                   Contact

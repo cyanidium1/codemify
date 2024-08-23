@@ -1,40 +1,36 @@
-import React from "react";
+import React from 'react';
+import Link from 'next/link';
 
 const SubscribeForm = () => {
   return (
-    <>
-      <div className="subscribe-area ptb-100">
-        <div className="bg-top"></div>
-        <div className="bg-bottom"></div>
-        
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-12 col-md-12">
-              <div className="newsletter">
-                <h4>
-                  Subscribe for the latest <span>Axolot</span> Updates
-                </h4>
-                <form>
-                  <input
-                    type="email"
-                    className="form-control"
-                    placeholder="Your Email Address"
-                    name="EMAIL"
-                    required
-                  />
-                  <button className="btn btn-primary" type="submit">
-                    Subscribe
-                  </button>
-                </form>
-              </div>
-            </div>
-          </div>
+    <div className="  py-12">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-8">
+          <h4 className="text-2xl font-semibold mb-4">
+            Ready to Start Your Journey with{' '}
+            <span className="text-blue-500">Codemify</span>?
+          </h4>
+          <p className="text-gray-400">
+            Choose your path and take the first step towards a successful
+            career.
+          </p>
         </div>
-
-        <div className="pattern"></div>
-        <div className="pattern-2"></div>
+        <div className="flex flex-col sm:flex-row justify-center gap-4">
+          <Link
+            href="link_to_payment_page"
+            className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-md text-lg text-center block"
+          >
+            I Want to Try the Week Course
+          </Link>
+          <Link
+            href="link_to_calendly"
+            className="bg-gray-700 hover:bg-gray-800 text-white px-8 py-3 rounded-md text-lg text-center block"
+          >
+            Schedule a Call with Sergey
+          </Link>
+        </div>
       </div>
-    </>
+    </div>
   );
 };
 

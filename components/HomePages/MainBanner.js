@@ -1,20 +1,13 @@
-import React, { useState } from "react";
-import Link from "next/link";
-import FsLightbox from "fslightbox-react";
-import Image from "next/image";
+import React, { useState } from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
 
 const MainBanner = () => {
-  // if toggler is updated when lightbox is closed it will open it
   const [toggler, setToggler] = useState(false);
+
   return (
     <>
-      <FsLightbox
-        toggler={toggler}
-        sources={["https://www.youtube.com/watch?v=bk7McNUjWgw"]}
-      />
-
       <div id="home" className="main-banner bg-gray">
-        <div className="pattern-2"></div>
         <div className="bg-top"></div>
         <div className="bg-bottom"></div>
 
@@ -22,24 +15,33 @@ const MainBanner = () => {
           <div className="row h-100 align-items-center">
             <div className="col-lg-6 col-md-6">
               <div className="main-banner-content">
-                <h1>Make your business more profitable</h1>
+                <h1>Enhance Your Career with Manual QA</h1>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                  ut.
+                  Learn the essential skills needed to succeed in the world of
+                  Manual QA. Join our courses and take the first step towards a
+                  rewarding career in tech.
                 </p>
 
-                <Link href="/contact" className="btn btn-primary">
-                  Get Started
+                <Link href="/registration" className="btn btn-primary w-full">
+                  Sign Up for a One-Week Trial Course
                 </Link>
 
-                <div
-                  className="btn btn-secondary"
-                  onClick={() => setToggler(!toggler)}
-                >
-                  <i className="icofont-ui-play"></i> Watch Our Video
+                <div className="mt-2">
+                  <span role="img" aria-label="gift-box">
+                    🎁
+                  </span>{' '}
+                  <span>
+                    + Receive a free guide: "How to Start YOUR WELL-PAID IT
+                    Career as a QA Engineer"
+                  </span>
                 </div>
+                <p className="text-2xl text-center my-2">- or -</p>
+                <Link
+                  href="/salary-comparison"
+                  className="btn btn-secondary mt-2 w-full"
+                >
+                  I don't want a well-paid job and financial independence
+                </Link>
               </div>
             </div>
 

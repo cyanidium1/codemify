@@ -200,7 +200,7 @@ textarea.form-control {
       transition: 0.4s;
 
       &:hover {
-        color: $white-color !important;
+        // color: $white-color !important;
         background: $theme-color !important;
       }
     }
@@ -1585,7 +1585,7 @@ textarea.form-control {
   }
   .accordion-title {
     display: block;
-    color: $white-color !important;
+    // color: $white-color !important;
     padding: 10px 20px;
     border-radius: 30px;
     text-decoration: none;

@@ -16,10 +16,11 @@ import Footer from '@/components/Layout/Footer';
 import VideoMain from '@/components/HomePages/VideoMain';
 import MainBanner from '@/components/HomePages/MainBanner';
 import Features from '@/components/Common/Features';
+import { Button } from '@nextui-org/react';
 
 export default function Index8() {
   return (
-    <>
+    <div className="bg-[#edf5ff] dark:bg-black">
       <OnePageNavbar />
 
       <VideoMain />
@@ -53,6 +54,6 @@ export default function Index8() {
       <SubscribeForm />
 
       <Footer />
-    </>
+    </div>
   );
 }

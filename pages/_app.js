@@ -14,6 +14,8 @@ import '../styles/globals.css';
 
 import Head from 'next/head';
 import ScrollToTop from '@/components/Layout/ScrollToTop';
+import { NextUIProvider } from '@nextui-org/system';
+import { ThemeProvider as NextThemesProvider } from 'next-themes';
 
 function MyApp({ Component, pageProps }) {
   React.useEffect(() => {
@@ -25,9 +27,11 @@ function MyApp({ Component, pageProps }) {
         <title>Codemify - Learn to Code, Get Hired, and Thrive in Tech</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-
-      <Component {...pageProps} />
-
+      <NextUIProvider>
+        <NextThemesProvider attribute="class" defaultTheme="dark">
+          <Component {...pageProps} />
+        </NextThemesProvider>
+      </NextUIProvider>
       <ScrollToTop />
     </>
   );

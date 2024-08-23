@@ -10,7 +10,7 @@
     font-size: 15px;
     padding: 9px 17px;
   }
-  .owl-theme:hover .owl-nav [class*=owl-] {
+  .owl-theme:hover .owl-nav [class*='owl-'] {
     left: 2px;
   }
   .owl-theme:hover .owl-nav .owl-next {
@@ -23,7 +23,8 @@
   .section-title h3 {
     font-size: 22px;
   }
-  .navbar-expand-lg .container, .navbar-expand-lg .container-fluid {
+  .navbar-expand-lg .container,
+  .navbar-expand-lg .container-fluid {
     padding-right: 15px;
     padding-left: 15px;
   }
@@ -194,7 +195,8 @@
     padding-bottom: 0;
     margin-bottom: 40px;
   }
-  .funFact::before, .funFact::after {
+  .funFact::before,
+  .funFact::after {
     display: none;
   }
   .funFact i {
@@ -355,7 +357,8 @@
   .page-title {
     height: 250px;
   }
-  .page-title .bg-top, .page-title .bg-bottom {
+  .page-title .bg-top,
+  .page-title .bg-bottom {
     display: none;
   }
   .page-title .pattern-2 {
@@ -472,7 +475,8 @@
     width: 255px;
     position: relative;
   }
-  .repair-about-image img:nth-child(4), .repair-about-image img:nth-child(5) {
+  .repair-about-image img:nth-child(4),
+  .repair-about-image img:nth-child(5) {
     display: none;
   }
   .single-repair-services {
@@ -669,7 +673,8 @@
     padding-left: 65px;
     margin-bottom: 30px;
   }
-  .col-lg-3:nth-child(3) .fun-fact, .col-lg-3:nth-child(4) .fun-fact {
+  .col-lg-3:nth-child(3) .fun-fact,
+  .col-lg-3:nth-child(4) .fun-fact {
     margin-bottom: 0;
   }
   .fun-fact i {
@@ -718,7 +723,8 @@
   .page-title {
     height: 300px;
   }
-  .page-title .bg-top, .page-title .bg-bottom {
+  .page-title .bg-top,
+  .page-title .bg-bottom {
     display: none;
   }
   .page-title .pattern-2 {
@@ -763,7 +769,8 @@
   .repair-boxes-area {
     padding-bottom: 0;
   }
-  .single-repair-box::before, .single-repair-box::after {
+  .single-repair-box::before,
+  .single-repair-box::after {
     display: none;
   }
   .repair-about-image {
@@ -774,7 +781,8 @@
     width: 350px;
     position: relative;
   }
-  .repair-about-image img:nth-child(4), .repair-about-image img:nth-child(5) {
+  .repair-about-image img:nth-child(4),
+  .repair-about-image img:nth-child(5) {
     display: none;
   }
   .repair-services-inner .col-lg-4:nth-child(2) {
@@ -850,8 +858,8 @@
     bottom: 28%;
   }
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1280px) {
   .container {
-    max-width: 1200px;
+    max-width: 1280px;
   }
-}/*# sourceMappingURL=responsive.css.map */
+} /*# sourceMappingURL=responsive.css.map */

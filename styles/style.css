@@ -36,6 +36,42 @@ This files table contents are outlined below>>>>>
 @tailwind components;
 @tailwind utilities;
 
+/* not template */
+
+.buttonBlick {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.buttonBlick:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1.5em;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+  transform: translateX(-4em) skewX(-45deg);
+  transition: transform 0.8s;
+}
+
+.buttonBlick:hover:before {
+  transform: translateX(50em) skewX(-45deg);
+}
+
+@keyframes move-light {
+  from {
+    transform: translateX(-4em) skewX(-45deg);
+  }
+  to {
+    transform: translateX(50em) skewX(-45deg);
+  }
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -58,7 +94,7 @@ img {
 
 a {
   text-decoration: none;
-  color: #506cea;
+  /* color: #506cea; */
   transition: 0.4s;
 }
 
@@ -156,18 +192,7 @@ textarea.form-control {
   padding-bottom: 20px;
   max-width: 520px;
 }
-.section-title h3::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 75px;
-  height: 3px;
-  border-radius: 5px;
-  right: 0;
-  margin: 0 auto;
-  background: #506cea;
-}
+
 .section-title p {
   max-width: 550px;
   margin: 0 auto;
@@ -196,7 +221,7 @@ textarea.form-control {
   transition: 0.4s;
 }
 .owl-theme .owl-nav [class*='owl-']:hover {
-  color: #ffffff !important;
+  /* color: #ffffff !important; */
   background: #506cea !important;
 }
 .owl-theme .owl-nav .owl-next {
@@ -749,9 +774,6 @@ textarea.form-control {
   margin-top: 15px;
   border-radius: 5px;
 }
-.about-text .blockquote p {
-  color: #ffffff;
-}
 
 /* ==============
     End About CSS 
@@ -906,7 +928,7 @@ textarea.form-control {
   background-size: cover;
   position: relative;
 }
-.funfacts-area::before {
+/* .funfacts-area::before {
   content: '';
   position: absolute;
   width: 100%;
@@ -915,7 +937,7 @@ textarea.form-control {
   background: #506cea;
   left: 0;
   opacity: 0.84;
-}
+} */
 
 .funFact {
   text-align: center;
@@ -1391,7 +1413,7 @@ textarea.form-control {
 }
 .accordion .accordion-title {
   display: block;
-  color: #ffffff !important;
+  /* color: #ffffff !important; */
   padding: 10px 20px;
   border-radius: 30px;
   text-decoration: none;

@@ -32,7 +32,7 @@ const FeaturesSlider = () => {
               992: {
                 slidesPerView: 3,
               },
-              1200: {
+              : {
                 slidesPerView: 4,
               },
             }}

@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import Link from 'next/link';
-import FsLightbox from 'fslightbox-react';
 
 const VideoMain = () => {
-  const [toggler, setToggler] = useState(false);
   const [videoSize, setVideoSize] = useState({ width: 560, height: 315 });
 
   const updateVideoSize = () => {
@@ -16,7 +13,7 @@ const VideoMain = () => {
     } else if (windowWidth < 992) {
       setVideoSize({ width: 640, height: 360 }); // Large screens
     } else {
-      setVideoSize({ width: 1200, height: 675 }); // Extra large screens
+      setVideoSize({ width: 1280, height: 675 }); // Extra large screens
     }
   };
 
@@ -36,9 +33,9 @@ const VideoMain = () => {
   return (
     <>
       <div
-        id="homev"
-        className="main-banner bg-gray"
-        style={{ paddingTop: '96px' }}
+        id="home"
+        className="main-banner bg-[#edf5ff] dark:bg-black"
+        style={{ paddingTop: '0px' }}
       >
         {/* <div className="pattern-2"></div> */}
         {/* <div className="bg-top"></div> */}
@@ -46,25 +43,24 @@ const VideoMain = () => {
 
         <div className="container">
           <div className="row h-100 flex items-center justify-center">
-            <h1 className="text-center text-2xl font-semibold sm:text-4xl mt-4">
+            <h1 className="text-center text-2xl font-semibold sm:text-6xl mt-4 dark:text-yellow-500">
               We all know we live once, right?
             </h1>
-            <p className="text-center">
+            <p className="text-center sm:text-2xl mb-2">
               So, isn’t it time to take the next big step and start earning what
               you are worth?
             </p>
-
             <iframe
               width={videoSize.width}
               height={videoSize.height}
-              src="https://player.vimeo.com/video/76979871?autoplay=1&loop=1&muted=1"
+              src="https://player.vimeo.com/video/76979871?autoplay=1&loop=1&muted=1&transparent=0"
               allow="autoplay; fullscreen"
               allowFullScreen
               title="Vimeo Video"
             ></iframe>
           </div>
         </div>
-        <div className="pattern"></div>
+        {/* <div className="pattern"></div> */}
       </div>
     </>
   );

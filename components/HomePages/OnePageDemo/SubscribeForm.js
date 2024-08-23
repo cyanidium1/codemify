@@ -6,9 +6,10 @@ const SubscribeForm = () => {
     <div className="  py-12">
       <div className="container mx-auto px-4">
         <div className="text-center mb-8">
-          <h4 className="text-2xl font-semibold mb-4">
+          <h4 className="text-2xl font-semibold mb-4 dark:text-slate-200">
             Ready to Start Your Journey with{' '}
-            <span className="text-blue-500">Codemify</span>?
+            <span className="text-blue-500 dark:text-yellow-500">Codemify</span>
+            ?
           </h4>
           <p className="text-gray-400">
             Choose your path and take the first step towards a successful
@@ -18,7 +19,7 @@ const SubscribeForm = () => {
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <Link
             href="link_to_payment_page"
-            className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-md text-lg text-center block"
+            className="bg-blue-600 hover:bg-blue-700 dark:bg-yellow-500 dark:hover:bg-yellow-700 dark:text-black text-white px-8 py-3 rounded-md text-lg text-center block"
           >
             I Want to Try the Week Course
           </Link>

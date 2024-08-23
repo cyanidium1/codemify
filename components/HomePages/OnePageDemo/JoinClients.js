@@ -20,7 +20,7 @@ const JoinClients = () => {
 
             <div className="col-lg-6 col-md-6">
               <div className="join-content">
-                <h3>
+                <h3 className="dark:text-yellow-500">
                   Over 100 Clients Have Successfully Completed Our Courses
                 </h3>
                 <p>
@@ -30,12 +30,15 @@ const JoinClients = () => {
                   skills and knowledge needed to succeed in the industry.
                 </p>
 
-                <Link href="#" className="btn btn-primary">
+                <Link
+                  href="#"
+                  className="buttonBlick bg-customBlue dark:bg-yellow-500 text-white dark:text-black text-2xl text-center"
+                >
                   Join Now
                 </Link>
-                <Link href="#" className="btn btn-secondary">
+                {/* <Link href="#" className="buttonBlick">
                   Start Free Trial
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>

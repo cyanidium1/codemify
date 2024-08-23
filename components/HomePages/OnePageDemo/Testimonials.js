@@ -96,25 +96,29 @@ const Testimonials = () => {
   return (
     <>
       <FsLightbox toggler={toggler} sources={[activeVideo]} />
-      <section className="testimonials-area bg-gray py-16">
+      <section id="reviews" className="testimonials-area py-16">
         <div className="container mx-auto">
-          <div className="text-center mb-12">
-            <span className="text-blue-500 font-semibold uppercase">
+          <div className="section-title">
+            <span className="text-customBlue dark:text-yellow-500">
               Student Reviews
             </span>
-            <h3 className="text-3xl font-bold mt-2">What Our Users Say</h3>
-            <p className="text-gray-600 mt-4">
+            <h3 className="pb-0 mb-0 text-slate-400">What Our Users Say</h3>
+            <div className="w-full flex justify-center">
+              <div className="bg-[#506cea] dark:bg-yellow-500 w-[75px] h-[3px] rounded-md my-4"></div>
+            </div>
+            <p>
               Codemify helps aspiring QA engineers gain career focus, develop
               the right skills, and master the interview process. Don’t just
               take our word for it, see what our QA Engineer graduates have to
               say:
             </p>
           </div>
+
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {testimonials.map((testimonial, index) => (
               <div
                 key={index}
-                className="bg-white p-6 rounded-lg shadow-md flex flex-col justify-between"
+                className="bg-blue-100 p-6 rounded-lg shadow-md flex flex-col justify-between dark:bg-slate-800"
                 data-aos="fade-up"
                 data-aos-delay={100 * (index + 1)}
                 data-aos-duration="800"
@@ -129,7 +133,7 @@ const Testimonials = () => {
                       />
                     </div>
                     <div className="">
-                      <h4 className="text-xl font-semibold">
+                      <h4 className="text-xl font-semibold dark:text-white">
                         {testimonial.name}
                       </h4>
                       <span className="text-gray-600">
@@ -140,17 +144,19 @@ const Testimonials = () => {
                           href={testimonial.instagram}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-blue-500 hover:text-blue-700 mt-2 block"
+                          className="text-blue-500 dark:text-yellow-500  mt-2 block"
                         >
                           {testimonial.username}
                         </a>
                       </div>
                     </div>
                   </div>
-                  <p className="text-gray-700 mb-4">{testimonial.quote}</p>
+                  <p className="text-gray-700 mb-4 dark:text-slate-200">
+                    {testimonial.quote}
+                  </p>
                 </div>
                 <button
-                  className="mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600"
+                  className="mt-4 bg-blue-500 text-white dark:text-black py-2 px-4 rounded hover:bg-blue-600 dark:bg-yellow-500 dark:hover:bg-yellow-600 duration-300 ease-in-out"
                   onClick={() => handleVideoClick(testimonial.video)}
                 >
                   Watch Video Review

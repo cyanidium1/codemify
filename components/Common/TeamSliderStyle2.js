@@ -1,7 +1,7 @@
-import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Autoplay } from "swiper/modules";
-import Image from "next/image";
+import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Autoplay } from 'swiper/modules';
+import Image from 'next/image';
 
 const TeamSliderStyle2 = () => {
   return (
@@ -33,7 +33,7 @@ const TeamSliderStyle2 = () => {
               992: {
                 slidesPerView: 3,
               },
-              1200: {
+              1280: {
                 slidesPerView: 4,
               },
             }}

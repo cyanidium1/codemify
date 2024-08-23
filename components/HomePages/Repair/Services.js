@@ -1,7 +1,7 @@
-import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Autoplay } from "swiper/modules";
-import Link from "next/link";
+import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination, Autoplay } from 'swiper/modules';
+import Link from 'next/link';
 
 const Services = () => {
   return (
@@ -32,7 +32,7 @@ const Services = () => {
               768: {
                 slidesPerView: 2,
               },
-              1200: {
+              1280: {
                 slidesPerView: 3,
               },
             }}

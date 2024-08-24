@@ -52,6 +52,13 @@ This files table contents are outlined below>>>>>
     20px 20px 40px rgba(0, 0, 0, 0.1);
 }
 
+.shadowBig {
+  box-shadow:
+    10px 10px 20px rgba(0, 0, 0, 0.3),
+    15px 15px 30px rgba(0, 0, 0, 0.2),
+    20px 20px 40px rgba(0, 0, 0, 0.1);
+}
+
 .buttonBlick:before {
   content: '';
   position: absolute;

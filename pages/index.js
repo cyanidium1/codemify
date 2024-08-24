@@ -17,12 +17,13 @@ import VideoMain from '@/components/HomePages/VideoMain';
 import MainBanner from '@/components/HomePages/MainBanner';
 import Features from '@/components/Common/Features';
 import { Button } from '@nextui-org/react';
+import FlyingComponent from '@/components/FlyingComponent';
 
 export default function Index8() {
   return (
     <div className="bg-white dark:bg-black p-2">
       <OnePageNavbar />
-
+      <FlyingComponent />
       <VideoMain />
 
       <MainBanner />

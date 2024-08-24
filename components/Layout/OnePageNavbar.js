@@ -45,9 +45,10 @@ export default function App() {
           aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
           className="sm:hidden"
         /> */}
-        <NavbarBrand>
+        <NavbarBrand className="flex items-center justify-center">
           <Image
-            src="/images/logoWhite.png"
+            сlassName="w-fit mx-auto"
+            src="/images/oooh.png"
             alt="logo"
             width={250}
             height={100}

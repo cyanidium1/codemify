@@ -57,7 +57,8 @@ export default function Index8() {
 
       <HotOffer />
 
-      <Footer />
+      <div className="h-24" />
+      {/* <Footer /> */}
     </div>
   );
 }

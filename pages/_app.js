@@ -28,7 +28,7 @@ function MyApp({ Component, pageProps }) {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <NextUIProvider>
-        <NextThemesProvider attribute="class" defaultTheme="dark">
+        <NextThemesProvider attribute="class" defaultTheme="light">
           <Component {...pageProps} />
         </NextThemesProvider>
       </NextUIProvider>

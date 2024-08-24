@@ -8,7 +8,7 @@ const MainBanner = () => {
 
   return (
     <>
-      <div className="flex justify-around w-full">
+      <div className="flex justify-around w-full max-w-screen-xl mx-auto">
         <div className="w-5/12">
           <Link
             href="/registration"
@@ -25,8 +25,8 @@ const MainBanner = () => {
         </Link>
       </div>
 
-      <div className="mt-2 dark:text-yellow-500 mb-6 px-2">
-        <span role="img" aria-label="gift-box">
+      <div className="mt-2 dark:text-yellow-500 mb-6 px-2 max-w-screen-xl mx-auto ">
+        <span role="img" aria-label="gift-box ">
           🎁
         </span>{' '}
         <span>
@@ -35,7 +35,7 @@ const MainBanner = () => {
         </span>
       </div>
 
-      <div className="relative px-2 py-4 rounded-xl bg-gray-200">
+      <div className="relative px-2 py-4 rounded-xl bg-gray-200 max-w-screen-xl mx-auto">
         <div className="bg-top hidden sm:block dark:hidden"></div>
         <div className="bg-bottom hidden sm:block dark:hidden"></div>
         <div

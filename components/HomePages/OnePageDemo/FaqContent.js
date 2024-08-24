@@ -14,32 +14,32 @@ const FaqContent = () => {
       title: 'Do I need coding experience or a special degree?',
       content: 'No prior experience or education required.',
     },
-    {
-      title: 'Do I need to learn math or programming?',
-      content:
-        'You will learn everything from scratch on our course. We’ve covered all topics you ever need to become a high performing QA engineer and land a highly paid job.',
-    },
+    // {
+    //   title: 'Do I need to learn math or programming?',
+    //   content:
+    //     'You will learn everything from scratch on our course. We’ve covered all topics you ever need to become a high performing QA engineer and land a highly paid job.',
+    // },
     {
       title: 'Does everyone find a job after the course?',
       content:
         'If you’re focused on job search and on completing the course, with all our tips and recommendations, you will get a job right after the FULL 5-month course.',
     },
-    {
-      title: 'Are there enough jobs on the market for everyone?',
-      content:
-        'It’s a hot market, with a lot of job offers and opportunities. Also, after our course, you will have an advantage over other applicants.',
-    },
-    {
-      title:
-        'What is the difference between a Manual and an Automation Course?',
-      content:
-        'Manual Testing is done manually by a QA analyst (Human), whereas Automation Testing is done with the use of scripts, code, and automation tools (computer) by a QA Engineer.',
-    },
-    {
-      title: 'Why should I choose QA Automation?',
-      content:
-        'You’ll double your chances to get a highly paid job! QA Automation Engineers also have more opportunities to get admin roles. As a QA Automation Engineer, there are many more good opportunities, as well as growth in this career within the whole IT industry.',
-    },
+    // {
+    //   title: 'Are there enough jobs on the market for everyone?',
+    //   content:
+    //     'It’s a hot market, with a lot of job offers and opportunities. Also, after our course, you will have an advantage over other applicants.',
+    // },
+    // {
+    //   title:
+    //     'What is the difference between a Manual and an Automation Course?',
+    //   content:
+    //     'Manual Testing is done manually by a QA analyst (Human), whereas Automation Testing is done with the use of scripts, code, and automation tools (computer) by a QA Engineer.',
+    // },
+    // {
+    //   title: 'Why should I choose QA Automation?',
+    //   content:
+    //     'You’ll double your chances to get a highly paid job! QA Automation Engineers also have more opportunities to get admin roles. As a QA Automation Engineer, there are many more good opportunities, as well as growth in this career within the whole IT industry.',
+    // },
     {
       title: 'How much money do QA engineers earn?',
       content:
@@ -50,11 +50,11 @@ const FaqContent = () => {
       content:
         'We recommend you check out the full program for further training here: https://codemify.com/program',
     },
-    {
-      title: 'If I want to sign up with a friend, will there be a discount?',
-      content:
-        'Yes, we have a referral program that provides a discount when you sign up for the course through a recommendation. Please contact us for more details.',
-    },
+    // {
+    //   title: 'If I want to sign up with a friend, will there be a discount?',
+    //   content:
+    //     'Yes, we have a referral program that provides a discount when you sign up for the course through a recommendation. Please contact us for more details.',
+    // },
     {
       title: 'Does it matter which country I live in?',
       content:

@@ -35,18 +35,27 @@ export default function App() {
   };
 
   return (
-    <Navbar onMenuOpenChange={setIsMenuOpen} height="80px" maxWidth="xl">
+    <Navbar
+      // onMenuOpenChange={setIsMenuOpen}
+      height="80px"
+      maxWidth="xl"
+    >
       <NavbarContent>
-        <NavbarMenuToggle
+        {/* <NavbarMenuToggle
           aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
           className="sm:hidden"
-        />
+        /> */}
         <NavbarBrand>
-          <Image src="/images/logo.png" alt="logo" width={250} height={100} />
+          <Image
+            src="/images/logoWhite.png"
+            alt="logo"
+            width={250}
+            height={100}
+          />
         </NavbarBrand>
       </NavbarContent>
 
-      <NavbarContent className="hidden sm:flex gap-4" justify="center">
+      {/* <NavbarContent className="hidden sm:flex gap-4" justify="center">
         {menuItems.map((item, index) => (
           <NavbarItem key={index}>
             <Link
@@ -96,7 +105,7 @@ export default function App() {
         <NavbarMenuItem>
           <ThemeSwitcher />
         </NavbarMenuItem>
-      </NavbarMenu>
+      </NavbarMenu> */}
     </Navbar>
   );
 }

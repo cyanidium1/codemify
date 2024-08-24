@@ -8,7 +8,34 @@ const MainBanner = () => {
 
   return (
     <>
-      <div className="relative">
+      <div className="flex justify-around w-full">
+        <div className="w-5/12">
+          <Link
+            href="/registration"
+            className="buttonBlick bg-green-500 text-white dark:text-black w-full text-xl sm:text-2xl text-center shadow-2xl hover:shadow-[0_0_30px_rgba(0,0,0,0.8)] transition-shadow duration-300"
+          >
+            Register
+          </Link>
+        </div>
+        <Link
+          href="/salary-comparison"
+          className="buttonBlick bg-gradient-to-bl from-[#FF5959] to-[#f2295b] text-white dark:text-black text-xl sm:text-xl text-center h-fit w-5/12 shadow-2xl hover:shadow-[0_0_30px_rgba(0,0,0,0.8)] transition-shadow duration-300"
+        >
+          See salaries
+        </Link>
+      </div>
+
+      <div className="mt-2 dark:text-yellow-500 mb-6 px-2">
+        <span role="img" aria-label="gift-box">
+          🎁
+        </span>{' '}
+        <span>
+          + Receive a free guide: "How to Start YOUR WELL-PAID IT Career as a QA
+          Engineer"
+        </span>
+      </div>
+
+      <div className="relative px-2 py-4 rounded-xl bg-gray-200">
         <div className="bg-top hidden sm:block dark:hidden"></div>
         <div className="bg-bottom hidden sm:block dark:hidden"></div>
         <div
@@ -48,30 +75,6 @@ const MainBanner = () => {
                   Manual QA. Join our courses and take the first step towards a
                   rewarding career in tech.
                 </p>
-
-                <Link
-                  href="/registration"
-                  className="buttonBlick bg-customBlue dark:bg-yellow-500 text-white dark:text-black w-full sm:text-2xl text-center"
-                >
-                  Sign Up for a One-Week Trial Course
-                </Link>
-
-                <div className="mt-2 dark:text-yellow-500">
-                  <span role="img" aria-label="gift-box">
-                    🎁
-                  </span>{' '}
-                  <span>
-                    + Receive a free guide: "How to Start YOUR WELL-PAID IT
-                    Career as a QA Engineer"
-                  </span>
-                </div>
-                <p className="text-2xl text-center my-2">- or -</p>
-                <Link
-                  href="/salary-comparison"
-                  className="buttonBlick bg-orange-400 dark:bg-orange-600 text-white dark:text-black w-full sm:text-xl text-center"
-                >
-                  I don't want a well-paid job and financial independence
-                </Link>
               </div>
             </div>
 

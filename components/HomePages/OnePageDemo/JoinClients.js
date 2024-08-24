@@ -37,7 +37,12 @@ const JoinClients = () => {
                 >
                   Join Now
                 </Link> */}
-                <ModalContact text="Join us now!" />
+                <Link
+                  href="/salary-comparison"
+                  className="buttonBlick bg-gradient-to-bl from-[#FF5959] to-[#f2295b] text-white dark:text-black text-xl sm:text-xl text-center h-fit w-5/12 shadow-2xl hover:shadow-[0_0_30px_rgba(0,0,0,0.8)] transition-shadow duration-300"
+                >
+                  Join us now!
+                </Link>
                 {/* <Link href="#" className="buttonBlick">
                   Start Free Trial
                 </Link> */}

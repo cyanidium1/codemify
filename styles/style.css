@@ -45,6 +45,11 @@ This files table contents are outlined below>>>>>
   padding: 10px 20px;
   border-radius: 5px;
   overflow: hidden;
+
+  box-shadow:
+    10px 10px 20px rgba(0, 0, 0, 0.3),
+    15px 15px 30px rgba(0, 0, 0, 0.2),
+    20px 20px 40px rgba(0, 0, 0, 0.1);
 }
 
 .buttonBlick:before {
@@ -117,7 +122,7 @@ p {
   margin-bottom: 0;
   font-size: 15px;
   line-height: 1.8;
-  color: #6f8ba4;
+  color: black;
 }
 
 .mt-75 {
@@ -597,7 +602,7 @@ textarea.form-control {
   border-radius: 2px;
 }
 .banner-form form label {
-  color: #6f8ba4;
+  color: black;
   margin-bottom: 8px;
   font-size: 15px;
 }
@@ -622,7 +627,7 @@ textarea.form-control {
   border-radius: 2px;
 }
 .hero-form form label {
-  color: #6f8ba4;
+  color: black;
   margin-bottom: 8px;
   font-size: 15px;
 }
@@ -716,7 +721,7 @@ textarea.form-control {
   list-style-type: none;
 }
 .about-content ul li {
-  color: #6f8ba4;
+  color: black;
   margin-top: 10px;
   font-weight: 400;
   text-align: left;
@@ -756,7 +761,7 @@ textarea.form-control {
   margin-top: 15px;
 }
 .about-text ul li {
-  color: #6f8ba4;
+  color: black;
   margin-top: 10px;
   font-weight: 400;
 }
@@ -903,7 +908,7 @@ textarea.form-control {
   margin-top: 15px;
 }
 .react-tab .react-tabs .tabs_item_content ul li {
-  color: #6f8ba4;
+  color: black;
   margin-top: 10px;
   font-weight: 400;
 }
@@ -1184,7 +1189,7 @@ textarea.form-control {
 }
 .our-team .post {
   display: inline-block;
-  color: #6f8ba4;
+  color: black;
 }
 .our-team:hover .pic::before {
   opacity: 1;
@@ -1282,7 +1287,7 @@ textarea.form-control {
 }
 .single-team .team-content .post {
   display: inline-block;
-  color: #6f8ba4;
+  color: black;
   position: relative;
 }
 .single-team:hover .pic::before,
@@ -1909,7 +1914,7 @@ textarea.form-control {
   margin: 0;
 }
 .single-footer ul li a {
-  color: #6f8ba4;
+  color: black;
   margin-top: 8px;
   display: block;
   text-decoration: none;
@@ -2440,7 +2445,7 @@ section.route-section {
 }
 .single-repair-services:hover p,
 .single-repair-services:focus p {
-  color: #6f8ba4;
+  color: black;
 }
 .single-repair-services:hover .read-more-btn,
 .single-repair-services:focus .read-more-btn {
@@ -2762,7 +2767,7 @@ Start Repair Partner CSS
 }
 .single-repair-blog-post .blog-content ul li {
   display: inline-block;
-  color: #6f8ba4;
+  color: black;
   position: relative;
   margin-right: 18px;
 }
@@ -2777,7 +2782,7 @@ Start Repair Partner CSS
   left: -13px;
 }
 .single-repair-blog-post .blog-content ul li a {
-  color: #6f8ba4;
+  color: black;
 }
 .single-repair-blog-post .blog-content ul li a:hover,
 .single-repair-blog-post .blog-content ul li a:focus {

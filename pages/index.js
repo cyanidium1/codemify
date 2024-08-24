@@ -20,7 +20,7 @@ import { Button } from '@nextui-org/react';
 
 export default function Index8() {
   return (
-    <div className="bg-[#edf5ff] dark:bg-black">
+    <div className="bg-white dark:bg-black p-2">
       <OnePageNavbar />
 
       <VideoMain />

@@ -7,7 +7,7 @@ const VideoMain = () => {
     const windowWidth = window.innerWidth;
 
     if (windowWidth < 576) {
-      setVideoSize({ width: 320, height: 180 }); // Small screens
+      setVideoSize({ width: 320, height: 220 }); // Small screens
     } else if (windowWidth < 768) {
       setVideoSize({ width: 480, height: 270 }); // Medium screens
     } else if (windowWidth < 992) {
@@ -34,7 +34,7 @@ const VideoMain = () => {
     <>
       <div
         id="home"
-        className="main-banner bg-[#edf5ff] dark:bg-black"
+        className="main-banner dark:bg-black"
         style={{ paddingTop: '0px' }}
       >
         {/* <div className="pattern-2"></div> */}
@@ -43,7 +43,7 @@ const VideoMain = () => {
 
         <div className="container">
           <div className="row h-100 flex items-center justify-center">
-            <h1 className="text-center text-2xl font-semibold sm:text-6xl mt-4 dark:text-yellow-500">
+            <h1 className="text-center text-2xl font-semibold sm:text-6xl dark:text-yellow-500">
               We all know we live once, right?
             </h1>
             <p className="text-center sm:text-2xl mb-2">
@@ -51,6 +51,7 @@ const VideoMain = () => {
               you are worth?
             </p>
             <iframe
+              className="rounded-2xl"
               width={videoSize.width}
               height={videoSize.height}
               src="https://player.vimeo.com/video/76979871?autoplay=1&loop=1&muted=1&transparent=0"

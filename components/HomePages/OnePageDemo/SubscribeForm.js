@@ -18,16 +18,16 @@ const SubscribeForm = () => {
         </div>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <Link
-            href="link_to_payment_page"
-            className="bg-blue-600 hover:bg-blue-700 dark:bg-yellow-500 dark:hover:bg-yellow-700 dark:text-black text-white px-8 py-3 rounded-md text-lg text-center block"
+            href="/salary-comparison"
+            className="buttonBlick bg-gradient-to-bl from-[#FF5959] to-[#f2295b] text-white dark:text-black text-xl sm:text-xl text-center h-fit w-5/12 shadow-2xl hover:shadow-[0_0_30px_rgba(0,0,0,0.8)] transition-shadow duration-300"
           >
-            I Want to Try the Week Course
+            I want to try free week course
           </Link>
           <Link
-            href="link_to_calendly"
-            className="bg-gray-700 hover:bg-gray-800 text-white px-8 py-3 rounded-md text-lg text-center block"
+            href="/salary-comparison"
+            className="buttonBlick bg-gradient-to-bl from-[#da6969] to-[#f2295b] text-white dark:text-black text-xl sm:text-xl text-center h-fit w-5/12 shadow-2xl hover:shadow-[0_0_30px_rgba(0,0,0,0.8)] transition-shadow duration-300"
           >
-            Schedule a Call with Sergey
+            Schedule meet with Sergey
           </Link>
         </div>
       </div>

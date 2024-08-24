@@ -16,7 +16,7 @@ const JoinClients = () => {
             </h3>
             <div className="mt-8 mb-8 flex justify-center">
               <Image
-                src="/img/hot-potato-hot.gif"
+                src="/img/here-catch.gif"
                 alt="Hot potato gif"
                 width={400}
                 height={300}

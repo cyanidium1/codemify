@@ -35,7 +35,7 @@ const VideoMain = () => {
       <div
         id="home"
         className="main-banner dark:bg-black"
-        style={{ paddingTop: '0px' }}
+        style={{ paddingTop: '0px', paddingBottom: '0px' }}
       >
         {/* <div className="pattern-2"></div> */}
         {/* <div className="bg-top"></div> */}
@@ -46,9 +46,9 @@ const VideoMain = () => {
             <h1 className="text-center text-2xl font-semibold sm:text-6xl dark:text-yellow-500">
               We all know we live once, right?
             </h1>
-            <p className="text-center sm:text-2xl mb-2">
-              So, isn’t it time to take the next big step and start earning what
-              you are worth?
+            <p className="text-center text-lg mb-2">
+              So, isn’t it time to take the next big step <br />
+              and start earning what you are worth?
             </p>
             <iframe
               className="rounded-2xl"

@@ -1,5 +1,11 @@
 import React from 'react';
-import { Accordion, AccordionItem } from '@nextui-org/react';
+import {
+  Accordion,
+  AccordionItem,
+  AccordionItemHeading,
+  AccordionItemButton,
+  AccordionItemPanel,
+} from 'react-accessible-accordion';
 import Image from 'next/image';
 
 const FaqContent = () => {
@@ -57,49 +63,51 @@ const FaqContent = () => {
   ];
 
   return (
-    <section id="faq" className="faq-area ptb-100">
-      <div className="container">
-        <div className="section-title">
-          <span className="text-customBlue dark:text-yellow-500">Q&A</span>
-          <h3 className="pb-0 mb-0 text-slate-400">
-            We are always happy to answer your questions
+    <>
+      <section id="faq" className="faq-area ptb-100">
+        <div className="container">
+          <h3 className="text-2xl text-center font-semibold mb-4">
+            Frequently Asked Questions
           </h3>
-          <div className="w-full flex justify-center">
-            <div className="bg-[#506cea] dark:bg-yellow-500 w-[75px] h-[3px] rounded-md my-4"></div>
-          </div>
-          <p>...even share our marketer's favorite drink!</p>
-        </div>
 
-        <div className="row align-items-center">
-          <div className="col-lg-6 col-md-12">
-            <div className="faq">
-              <Accordion variant="splitted">
-                {faqs.map((faq, index) => (
-                  <AccordionItem
-                    key={index}
-                    aria-label={`Accordion ${index + 1}`}
-                    title={faq.title}
-                    className="dark:text-yellow-500"
-                  >
-                    {faq.content}
-                  </AccordionItem>
-                ))}
-              </Accordion>
+          <div className="row align-items-center">
+            <div className="col-lg-6 col-md-12">
+              <div className="faq">
+                <Accordion preExpanded={['a']}>
+                  {faqs.map((faq, index) => (
+                    <AccordionItem uuid={index.toString()} key={index}>
+                      <AccordionItemHeading>
+                        <AccordionItemButton className="bg-gray-100 p-2 rounded-md hover:bg-gray-200">
+                          {faq.title}
+                        </AccordionItemButton>
+                      </AccordionItemHeading>
+                      <AccordionItemPanel className="bg-gray-50 p-2 rounded-md">
+                        <p className="text-gray-700">{faq.content}</p>
+                      </AccordionItemPanel>
+                    </AccordionItem>
+                  ))}
+                </Accordion>
+              </div>
+            </div>
+
+            <div className="col-lg-6 col-md-12">
+              <div
+                className="faq-img"
+                data-aos="fade-up"
+                data-aos-duration="800"
+              >
+                <Image
+                  src="/img/about.png"
+                  alt="faq"
+                  width={605}
+                  height={525}
+                />
+              </div>
             </div>
           </div>
-
-          <div className="col-lg-6 col-md-12 ">
-            <div
-              className="faq-img" // Added classes to make the image sticky
-              data-aos="fade-up"
-              data-aos-duration="800"
-            >
-              <Image src="/img/about.png" alt="faq" width={605} height={525} />
-            </div>
-          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
 

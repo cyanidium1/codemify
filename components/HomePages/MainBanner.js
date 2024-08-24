@@ -8,6 +8,9 @@ const MainBanner = () => {
 
   return (
     <>
+      <h1 className="dark:text-yellow-500 text-4xl text-center my-2">
+        Enhance Your Career with Manual QA
+      </h1>
       <div className="flex justify-around w-full max-w-screen-xl mx-auto">
         <div className="w-5/12">
           <Link
@@ -25,17 +28,71 @@ const MainBanner = () => {
         </Link>
       </div>
 
-      <div className="mt-2 dark:text-yellow-500 mb-6 px-2 max-w-screen-xl mx-auto ">
+      <div className="mt-2 dark:text-yellow-500 mb-6 px-2 max-w-screen-xl mx-auto text-xl text-center">
         <span role="img" aria-label="gift-box ">
-          🎁
+          Register and receive 🎁 guide:
         </span>{' '}
-        <span>
-          + Receive a free guide: "How to Start YOUR WELL-PAID IT Career as a QA
-          Engineer"
+        <span className="font-semibold">
+          "How to start your well-paid IT Career”
         </span>
       </div>
 
-      <div className="relative px-2 py-4 rounded-xl bg-gray-200 max-w-screen-xl mx-auto">
+      <div className="bg-gray-200 p-6 rounded-lg shadow-lg">
+        <h2 className="text-2xl font-bold text-blue-600">
+          We&apos;ve all been there. We know what it&apos;s like when:
+        </h2>
+        <ul className="mt-4 space-y-2 text-gray-700">
+          <li className="flex">
+            <span className="font-bold">•</span>
+            <span className="ml-2">
+              You&apos;re tired of{' '}
+              <span className="font-bold"> working minimum wage</span> and
+              barely getting by from paycheck to paycheck.
+            </span>
+          </li>
+          <li className="flex">
+            <span className="font-bold">•</span>
+            <span className="ml-2">
+              You <span className="font-bold">don&apos;t feel free</span>,
+              constantly tied to your job.
+            </span>
+          </li>
+          <li className="flex">
+            <span className="font-bold">•</span>
+            <span className="ml-2">
+              You&apos;ve <span className="font-bold">burned out</span> and want
+              to start fresh with a new career.
+            </span>
+          </li>
+          <li className="flex">
+            <span className="font-bold">•</span>
+            <span className="ml-2">
+              You&apos;re unsure if you can handle learning an IT profession and{' '}
+              <span className="font-bold">
+                feel like that world of high salaries isn’t for you.
+              </span>
+            </span>
+          </li>
+          <li className="flex">
+            <span className="font-bold">•</span>
+            <span className="ml-2">
+              You <span className="font-bold">just graduated,</span> but you
+              want to start earning well within your first year, without the
+              long grind of climbing the career ladder.
+            </span>
+          </li>
+          <li className="flex">
+            <span className="font-bold">•</span>
+            <span className="ml-2">
+              You want to be financially independent and take control of your
+              life, not be{' '}
+              <span className="font-bold"> ruled by your fears.</span>
+            </span>
+          </li>
+        </ul>
+      </div>
+
+      {/* <div className="relative px-2 py-4 rounded-xl bg-gray-200 max-w-screen-xl mx-auto">
         <div className="bg-top hidden sm:block dark:hidden"></div>
         <div className="bg-bottom hidden sm:block dark:hidden"></div>
         <div
@@ -66,11 +123,9 @@ const MainBanner = () => {
         <div id="main" className="container relative z-20">
           <div className="row h-100 align-items-center">
             <div className="col-lg-6 col-md-6">
-              <div className="main-banner-content">
-                <h1 className="dark:text-yellow-500 ">
-                  Enhance Your Career with Manual QA
-                </h1>
-                <p>
+              <div className="main-banner-content"> */}
+
+      {/* <p>
                   Learn the essential skills needed to succeed in the world of
                   Manual QA. Join our courses and take the first step towards a
                   rewarding career in tech.
@@ -95,7 +150,7 @@ const MainBanner = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };

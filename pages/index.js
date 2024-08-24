@@ -18,41 +18,44 @@ import MainBanner from '@/components/HomePages/MainBanner';
 import Features from '@/components/Common/Features';
 import { Button } from '@nextui-org/react';
 import FlyingComponent from '@/components/FlyingComponent';
+import { performRequest } from 'lib/datocms';
+import PerfectForSection from '@/components/PerfectFor';
+import HotOffer from '@/components/Deal';
 
 export default function Index8() {
   return (
     <div className="bg-white dark:bg-black p-2">
-      <OnePageNavbar />
+      {/* <OnePageNavbar /> */}
+
       <FlyingComponent />
+
       <VideoMain />
 
       <MainBanner />
 
-      <Features />
+      <PerfectForSection />
+
+      {/* <Features /> */}
 
       <AboutUs />
 
-      {/* <ServicesSlider /> */}
+      {/* <ServicesTab /> */}
 
-      <ServicesTab />
+      {/* <FunFacts /> */}
 
-      <FunFacts />
+      {/* <HowItWorks /> */}
 
       <JoinClients />
-
-      <HowItWorks />
-
-      {/* <TeamSlider /> */}
 
       <Testimonials />
 
       <FaqContent />
 
-      {/* <Pricing /> */}
+      {/* <Partners /> */}
 
-      <Partners />
+      {/* <SubscribeForm /> */}
 
-      <SubscribeForm />
+      <HotOffer />
 
       <Footer />
     </div>
